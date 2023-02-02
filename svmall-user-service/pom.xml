@@ -12,9 +12,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>svmall-user-service</name>
     <description>svmall-user-service</description>
-    <properties>
-        <java.version>17</java.version>
-    </properties>
+
     <dependencies>
     </dependencies>
 
