@@ -12,9 +12,6 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>svmall-shopcart-service</name>
     <description>svmall-shopcart-service</description>
-    <properties>
-        <java.version>17</java.version>
-    </properties>
     <dependencies>
     </dependencies>
 
