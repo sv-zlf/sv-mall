@@ -15,6 +15,7 @@
         <module>svmall-product-service</module>
         <module>svmall-shopcart-service</module>
         <module>svmall-gateway-admin</module>
+        <module>svmall-gateway-user</module>
         <module>svmall-common</module>
     </modules>
     <properties>

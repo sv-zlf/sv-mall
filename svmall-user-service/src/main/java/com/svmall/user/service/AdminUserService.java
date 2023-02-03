@@ -1,0 +1,16 @@
+package com.svmall.user.service;
+
+import com.svmall.user.entity.AdminUser;
+import com.baomidou.mybatisplus.extension.service.IService;
+
+/**
+ * <p>
+ *  服务类
+ * </p>
+ *
+ * @author zlf
+ * @since 2023-02-03
+ */
+public interface AdminUserService extends IService<AdminUser> {
+
+}

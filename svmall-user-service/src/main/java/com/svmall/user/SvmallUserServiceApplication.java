@@ -1,4 +1,4 @@
-package com.user.svmall;
+package com.svmall.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

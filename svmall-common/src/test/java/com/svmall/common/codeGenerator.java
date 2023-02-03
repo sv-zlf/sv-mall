@@ -22,7 +22,7 @@ public class codeGenerator {
         // 2、全局配置
         GlobalConfig gc = new GlobalConfig();
         //String projectPath = System.getProperty("user.dir");
-        String projectPath = "F:/江苏大学小助手/ujsAssistant/service-ujs";
+        String projectPath = "E:\\Project\\mall\\sv-mall\\svmall-user-service";
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("zlf");
         gc.setOpen(false); //生成后是否打开资源管理器
@@ -33,7 +33,7 @@ public class codeGenerator {
 
         // 3、数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/ujs_assistant?serverTimezone=GMT%2B8&characterEncoding=utf-8");
+        dsc.setUrl("jdbc:mysql://localhost:3306/mall_user?serverTimezone=GMT%2B8&characterEncoding=utf-8");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
