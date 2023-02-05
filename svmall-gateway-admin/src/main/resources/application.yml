@@ -6,33 +6,28 @@ spring:
       server-addr: 127.0.0.1:8848
       discovery:
         server-addr: ${spring.cloud.nacos.server-addr}
-        namespace: 17bd616f-e7e0-40f3-8dc5-7ff4f31b8e4b
+        namespace: 29708712-1f65-488e-965a-acd5adea43fe
     gateway:
       discovery:
         locator:
           enabled: true
       routes:
-        - id: core
-          uri: lb://service-core
+        - id: user-service
+          uri: lb://user-service
           predicates:
-            - Path=/api/ziyuan/**
+            - Path=/api/user/**
           filters:
             - StripPrefix=2
-        - id: menu
-          uri: lb://service-menu
-          predicates:
-            - Path=/api/menu/**
-          filters:
-            - StripPrefix=2
-        - id: ujs
-          uri: lb://service-ujs
-          predicates:
-            - Path=/api/ujs/**
-          filters:
-            - StripPrefix=2
-#  datasource: # mysql?????
-#    type: com.zaxxer.hikari.HikariDataSource
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://localhost:3306/ujs_assistant?serverTimezone=GMT%2B8&characterEncoding=utf-8
-#    username: root
-#    password: 123456
+#        - id: menu
+#          uri: lb://service-menu
+#          predicates:
+#            - Path=/api/menu/**
+#          filters:
+#            - StripPrefix=2
+#        - id: ujs
+#          uri: lb://service-ujs
+#          predicates:
+#            - Path=/api/ujs/**
+#          filters:
+#            - StripPrefix=2
+

@@ -3,6 +3,8 @@ package com.svmall.user.service;
 import com.svmall.user.entity.AdminUser;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -12,5 +14,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2023-02-03
  */
 public interface AdminUserService extends IService<AdminUser> {
+
+    List<AdminUser> selectList();
 
 }
