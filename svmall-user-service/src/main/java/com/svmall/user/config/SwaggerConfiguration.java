@@ -5,15 +5,21 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.annotation.Order;
-
 import springfox.bean.validators.configuration.BeanValidatorPluginsConfiguration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.builders.RequestParameterBuilder;
+import springfox.documentation.schema.ScalarType;
 import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.ParameterType;
+import springfox.documentation.service.RequestParameter;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Configuration
@@ -22,7 +28,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Import(BeanValidatorPluginsConfiguration.class)
 public class SwaggerConfiguration {
 
-    @Bean(value = "coreApi")
+    @Bean(value = "userApi")
     @Order(value = 1)
     public Docket coreApi() {
         return new Docket(DocumentationType.SWAGGER_2)
@@ -30,29 +36,29 @@ public class SwaggerConfiguration {
                 .apiInfo(groupApiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.svmall.user.controller"))
-
                 .paths(PathSelectors.any())
-                .build();
+                .build()
+                .globalRequestParameters(getGlobalRequestParameters());
+
     }
 
-//    @Bean(value = "menuApi")
-//    @Order(value = 1)
-//    public Docket menuApi() {
-//        return new Docket(DocumentationType.SWAGGER_2)
-//                .groupName("随机菜单接口")
-//                .apiInfo(groupApiInfo())
-//                .select()
-//                .apis(RequestHandlerSelectors.basePackage("com.bzf.menu.controller"))
-//                .paths(PathSelectors.any())
-//
-//                .build();
-//    }
+    //生成全局通用参数
+    private List<RequestParameter> getGlobalRequestParameters() {
+        List<RequestParameter> parameters = new ArrayList<>();
+        parameters.add(new RequestParameterBuilder()
+                .name("token")
+                .description("登录认证token")
+                .required(false) // 非必传
+                .in(ParameterType.HEADER) //请求头中的参数，其它类型可以点进ParameterType类中查看
+                .query(q -> q.model(m -> m.scalarModel(ScalarType.STRING)))
+                .build());
+        return parameters;
+    }
     private ApiInfo groupApiInfo(){
         return new ApiInfoBuilder()
-                .title("江大学生小助手")
-                .description("<div style='font-size:14px;color:red;'助力江大学生'</div>")
+                .title("sv商城")
+                .description("user-service接口文档")
                 .termsOfServiceUrl("http://www.zlfeng.cn/")
-               // .contact("group@qq.com")
                 .version("1.0")
                 .build();
     }
