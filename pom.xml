@@ -25,7 +25,6 @@
         <module>svmall-gateway-admin</module>
         <module>svmall-gateway-user</module>
         <module>svmall-common</module>
-        <module>svmall-api</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

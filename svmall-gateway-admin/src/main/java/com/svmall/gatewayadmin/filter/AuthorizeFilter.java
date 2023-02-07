@@ -26,7 +26,7 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
         //2.放行登录与swagger测试
-        if(request.getURI().getPath().contains("/v2/api-docs")||request.getURI().getPath().contains("/login")){
+        if(request.getURI().getPath().contains("/v2/api-docs")||request.getURI().getPath().contains("/login")||request.getURI().getPath().contains("/hello")){
             return chain.filter(exchange);
         }
         log.info("当前请求路径："+request.getURI().getPath());

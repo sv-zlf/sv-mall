@@ -27,10 +27,9 @@ public class AdminUserController {
     @Autowired
     AdminUserService adminUserService;
 
-    @GetMapping("/")
-    public String getTitle() {
-        adminUserService.selectList();
-        return "hell0";
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello,world!";
     }
 
 }

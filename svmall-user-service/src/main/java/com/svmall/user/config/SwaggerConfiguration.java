@@ -30,7 +30,7 @@ public class SwaggerConfiguration {
 
     @Bean(value = "userApi")
     @Order(value = 1)
-    public Docket coreApi() {
+    public Docket userApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName(Docket.DEFAULT_GROUP_NAME)
                 .apiInfo(groupApiInfo())
