@@ -1,7 +1,7 @@
-package com.svmall.common.exception;
+package com.svmall.gatewayadmin.exception;
 
-import com.svmall.common.vo.AppCode;
-import com.svmall.common.vo.StatusCode;
+import com.svmall.gatewayadmin.vo.AppCode;
+import com.svmall.gatewayadmin.vo.StatusCode;
 import lombok.Getter;
 
 /**

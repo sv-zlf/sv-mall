@@ -1,4 +1,4 @@
-package com.svmall.common.vo;
+package com.svmall.gatewayadmin.vo;
 
 import lombok.Getter;
 

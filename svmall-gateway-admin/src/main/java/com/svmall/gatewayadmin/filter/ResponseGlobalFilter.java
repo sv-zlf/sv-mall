@@ -10,6 +10,11 @@ package com.svmall.gatewayadmin.filter;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.svmall.gatewayadmin.exception.APIException;
+import com.svmall.gatewayadmin.vo.ResultCode;
+import com.svmall.gatewayadmin.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.reactivestreams.Publisher;
@@ -37,10 +42,6 @@ import java.nio.charset.Charset;
 public class ResponseGlobalFilter implements GlobalFilter, Ordered {
 
 
-
-    private static String CODE = "code";
-    private static String MSG = "msg";
-
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         ServerHttpResponse originalResponse = exchange.getResponse();
@@ -58,9 +59,31 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                         DataBufferUtils.release(dataBuffer);
                         String lastStr = new String(content, Charset.forName("UTF-8"));
 
-//                        JSONObject jsonObject = JSONUtil.parseObj(lastStr, false);
                         log.info("原始Response:{}", lastStr);
+
+                        if(lastStr.contains("swagger")) {
+                            return bufferFactory.wrap(content);
+                        }
                         //在此处处理返回结果
+                        // String类型不能直接包装
+                        if(!isJsonObject(lastStr)){
+                            ObjectMapper objectMapper = new ObjectMapper();
+                            try {
+                                // 将数据包装在ResultVo里后转换为json串进行返回
+                                lastStr=JSONUtil.toJsonStr(objectMapper.writeValueAsString(new ResultVo(lastStr)));
+                                log.info("转化后的lastStr："+lastStr.getBytes());
+                                //需要重新设置长度，不然显示不全
+                                originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
+                                 return bufferFactory.wrap(lastStr.getBytes());
+                            } catch (JsonProcessingException e) {
+                                throw new APIException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
+                            }
+                        }
+                        else{
+                            lastStr = JSONUtil.toJsonStr(new ResultVo(lastStr));
+                            originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
+                            return bufferFactory.wrap(lastStr.getBytes());
+                        }
 //                        switch (jsonObject.getInt(CODE)) {
 //                            case NO_SUCH_MESSAGE:
 //                                lastStr = JSONUtil.toJsonStr(getGlobalResponse(jsonObject));
@@ -68,7 +91,7 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
 //                                return bufferFactory.wrap(lastStr.getBytes());
 //                        }
                         //不处理异常则用json转换前的数据返回
-                        return bufferFactory.wrap(content);
+                       // return bufferFactory.wrap(content);
                     }));
                 }
                 return super.writeWith(body);
@@ -91,5 +114,19 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
 //        globalResponse.setCode(jsonObject.getInt(CODE));
 //        return globalResponse;
 //    }
+
+    private   boolean isJsonObject(String content) {
+        // 此处应该注意，不要使用StringUtils.isEmpty(),因为当content为"  "空格字符串时，JSONObject.parseObject可以解析成功，
+        // 实际上，这是没有什么意义的。所以content应该是非空白字符串且不为空，判断是否是JSON数组也是相同的情况。
+        if(StringUtils.isBlank(content)) {
+            return false;
+        }
+        try {
+            JSONObject jsonStr =JSONUtil.parseObj(content);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
 
