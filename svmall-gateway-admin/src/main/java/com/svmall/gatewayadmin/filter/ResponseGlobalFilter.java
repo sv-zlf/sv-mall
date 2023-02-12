@@ -1,10 +1,6 @@
 package com.svmall.gatewayadmin.filter;
 
-/**
- * @author zlf
- * @data 2023/2/8
- * @apiNote
- */
+
 
 
 import cn.hutool.json.JSONObject;
@@ -12,7 +8,7 @@ import cn.hutool.json.JSONUtil;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.svmall.gatewayadmin.exception.APIException;
+import com.svmall.gatewayadmin.exception.ApiException;
 import com.svmall.gatewayadmin.vo.ResultCode;
 import com.svmall.gatewayadmin.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +31,11 @@ import reactor.core.publisher.Mono;
 import java.nio.charset.Charset;
 
 
-
+/**
+ * @author zlf
+ * @data 2023/2/8
+ * @apiNote 统一响应过滤器
+ */
 @Slf4j
 @Component
 @Configuration
@@ -76,7 +76,7 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                                 originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
                                  return bufferFactory.wrap(lastStr.getBytes());
                             } catch (JsonProcessingException e) {
-                                throw new APIException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
+                                throw new ApiException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
                             }
                         }
                         else{
