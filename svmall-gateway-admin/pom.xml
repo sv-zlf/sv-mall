@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.svmall</groupId>
-    <artifactId>gateway-admin</artifactId>
+    <artifactId>gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>svmall-gateway-admin</name>
     <description>svmall-gateway-admin</description>
