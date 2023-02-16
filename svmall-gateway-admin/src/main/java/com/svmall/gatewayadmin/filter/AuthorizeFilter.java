@@ -1,7 +1,11 @@
 package com.svmall.gatewayadmin.filter;
 
+import com.svmall.common.utils.RedisUtil;
+import com.svmall.gatewayadmin.exception.ApiException;
+import com.svmall.gatewayadmin.vo.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -20,6 +24,9 @@ import reactor.core.publisher.Mono;
 @Component
 @Slf4j
 public class AuthorizeFilter implements Ordered, GlobalFilter {
+
+    @Autowired
+    private  RedisUtil redisUtil;
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
         //1.获取request和response对象
@@ -33,10 +40,10 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
         //3.获取token
         String token = request.getHeaders().getFirst("token");
 
+        redisUtil.set("bf","5201314");
         //4.判断token是否存在
         if(StringUtils.isBlank(token)){
-            response.setStatusCode(HttpStatus.UNAUTHORIZED);
-            return response.setComplete();
+            throw new ApiException(ResultCode.TOKEN_INVALID, "token不存在");
         }
 
         //5.判断token是否有效

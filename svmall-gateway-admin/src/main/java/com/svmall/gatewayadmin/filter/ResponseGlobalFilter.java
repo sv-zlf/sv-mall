@@ -70,16 +70,18 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                             ObjectMapper objectMapper = new ObjectMapper();
                             try {
                                 // 将数据包装在ResultVo里后转换为json串进行返回
-                                lastStr=JSONUtil.toJsonStr(objectMapper.writeValueAsString(new ResultVo(lastStr)));
-                                log.info("转化后的lastStr："+lastStr.getBytes());
+                                byte[] newRs =objectMapper.writeValueAsBytes(new ResultVo(lastStr));
+//                                lastStr=JSONUtil.toJsonStr(objectMapper.writeValueAsString());
+//                                log.info("转化后的lastStr："+lastStr.getBytes());
                                 //需要重新设置长度，不然显示不全
-                                originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
-                                 return bufferFactory.wrap(lastStr.getBytes());
+                                originalResponse.getHeaders().setContentLength(newRs.length);
+                                 return bufferFactory.wrap(newRs);
                             } catch (JsonProcessingException e) {
                                 throw new ApiException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
                             }
                         }
                         else{
+
                             lastStr = JSONUtil.toJsonStr(new ResultVo(lastStr));
                             originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
                             return bufferFactory.wrap(lastStr.getBytes());

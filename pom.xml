@@ -33,7 +33,7 @@
         <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
         <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
-        <mybatis-plus.version>3.5.3.1</mybatis-plus.version>
+        <mybatis-plus.version>3.3.0</mybatis-plus.version>
         <velocity.version>2.3</velocity.version>
         <!--Swagger Resources-->
         <knife4j.version>3.0.3</knife4j.version>

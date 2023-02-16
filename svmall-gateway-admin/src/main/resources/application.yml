@@ -18,16 +18,25 @@ spring:
             - Path=/api/user/**
           filters:
             - StripPrefix=2
-#        - id: menu
-#          uri: lb://service-menu
-#          predicates:
-#            - Path=/api/menu/**
-#          filters:
-#            - StripPrefix=2
-#        - id: ujs
-#          uri: lb://service-ujs
-#          predicates:
-#            - Path=/api/ujs/**
-#          filters:
-#            - StripPrefix=2
+  redis:
+    # Redis默认情况下有16个分片(库)，这里配置具体使用的分片，默认是0
+    database: 0
+    # redis服务器地址（填写自己的服务器地址）
+    host: 127.0.0.1
+    # redis端口（默认6379）
+    port: 6379
+    #redis连接超时等待,10秒
+    timeout: PT10S
+    # redis访问密码（默认为空）
+    password:
+    jedis:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制） 默认 8
+        max-active: 50
+        # 连接池中的最大空闲连接 默认 8
+        max-idle: 20
+        # 连接池中的最小空闲连接 默认 0
+        min-idle: 1
+        # 连接池最大阻塞等待时间(使用负值表示没有限制) 默认 -1，这里配置10s
+        max-wait: PT10S
 

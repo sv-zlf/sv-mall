@@ -1,14 +1,14 @@
 package com.svmall.user.controller;
 
 
+import com.svmall.user.controller.parm.AdminLoginParam;
 import com.svmall.user.service.AdminUserService;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
+import javax.validation.Valid;
 
 
 /**
@@ -30,6 +30,12 @@ public class AdminUserController {
     @GetMapping("/hello")
     public String hello() {
         return "hello,world!";
+    }
+
+    @ApiOperation(value = "登录接口", notes = "返回token")
+    @PostMapping("/login")
+    public String login(@RequestBody @Valid AdminLoginParam adminLoginParam) {
+        return adminUserService.login(adminLoginParam);
     }
 
 }

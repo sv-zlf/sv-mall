@@ -11,6 +11,7 @@ import lombok.Getter;
 public enum ResultCode implements StatusCode{
     SUCCESS(200, "请求成功"),
     FAILED(400, "请求失败"),
+    TOKEN_INVALID(500, "token校验失败"),
     VALIDATE_ERROR(1001, "参数校验失败"),
     RESPONSE_PACK_ERROR(1002, "response返回包装失败");
 
