@@ -7,7 +7,8 @@ import java.util.Map;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
-import com.svmall.gatewayadmin.vo.ResultVo;
+import com.svmall.common.vo.ResultCode;
+import com.svmall.common.vo.ResultVo;
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.reactive.error.DefaultErrorWebExceptionHandler;
@@ -20,7 +21,7 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerRequest;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
-import static com.svmall.gatewayadmin.vo.AppCode.APP_ERROR;
+
 
 /**
  * @author zlf
@@ -92,7 +93,7 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
      */
     public static Map<String, Object> response(int status, String errorMessage) {
 
-        JSONObject jsonObject = JSON.parseObject(JSON.toJSONString(new ResultVo(APP_ERROR,errorMessage)));
+        JSONObject jsonObject = JSON.parseObject(JSON.toJSONString(new ResultVo(ResultCode.APP_ERROR,errorMessage)));
         return jsonObject;
     }
 

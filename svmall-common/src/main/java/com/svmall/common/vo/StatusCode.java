@@ -1,4 +1,4 @@
-package com.svmall.gatewayadmin.vo;
+package com.svmall.common.vo;
 
 /**
  * @author zlf

@@ -1,15 +1,14 @@
 package com.svmall.gatewayadmin.filter;
 
 import com.svmall.common.utils.RedisUtil;
-import com.svmall.gatewayadmin.exception.ApiException;
-import com.svmall.gatewayadmin.vo.ResultCode;
+import com.svmall.common.exception.ErrorException;
+import com.svmall.common.vo.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
@@ -37,42 +36,17 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
             return chain.filter(exchange);
         }
         log.info("当前请求路径："+request.getURI().getPath());
-        //3.获取token
+        //3.获取token和key
         String token = request.getHeaders().getFirst("token");
-
-        redisUtil.set("bf","5201314");
         //4.判断token是否存在
         if(StringUtils.isBlank(token)){
-            throw new ApiException(ResultCode.TOKEN_INVALID, "token不存在");
+            throw new ErrorException(ResultCode.TOKEN_INVALID, "token不存在");
         }
-
-        //5.判断token是否有效
-        //try {
-        //    Claims claimsBody = AppJwtUtil.getClaimsBody(token);
-        //    //是否是过期
-        //    int result = AppJwtUtil.verifyToken(claimsBody);
-        //    if(result == 1 || result  == 2){
-        //        response.setStatusCode(HttpStatus.UNAUTHORIZED);
-        //        return response.setComplete();
-        //    }
-        //
-        //
-        //    //获取用户登录的id
-        //    String userId = claimsBody.get("id").toString();
-        //
-        //    //对请求对象request进行增强
-        //    ServerHttpRequest req = request.mutate().headers(httpHeaders -> {
-        //        //httpHeaders 封装了所有的请求头
-        //
-        //        httpHeaders.set("userId", userId);
-        //    }).build();
-        //
-        //    //设置增强的request到exchagne对象中
-        //    exchange.mutate().request(req);
-        //} catch (Exception e) {
-        //    e.printStackTrace();
-        //}
-
+        //5.获取缓存中是否存在token
+        Object value=redisUtil.get(token);
+        if (value.equals("")){
+            throw new ErrorException(ResultCode.TOKEN_INVALID, "token已失效");
+        }
         //6.放行
         return chain.filter(exchange);
     }

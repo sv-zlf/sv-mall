@@ -8,9 +8,9 @@ import cn.hutool.json.JSONUtil;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.svmall.gatewayadmin.exception.ApiException;
-import com.svmall.gatewayadmin.vo.ResultCode;
-import com.svmall.gatewayadmin.vo.ResultVo;
+import com.svmall.common.exception.ErrorException;
+import com.svmall.common.vo.ResultCode;
+import com.svmall.common.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.reactivestreams.Publisher;
@@ -77,7 +77,7 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                                 originalResponse.getHeaders().setContentLength(newRs.length);
                                  return bufferFactory.wrap(newRs);
                             } catch (JsonProcessingException e) {
-                                throw new ApiException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
+                                throw new ErrorException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
                             }
                         }
                         else{

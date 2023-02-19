@@ -1,4 +1,4 @@
-package com.svmall.gatewayadmin.vo;
+package com.svmall.common.vo;
 
 import lombok.Getter;
 
@@ -13,7 +13,8 @@ public enum ResultCode implements StatusCode{
     FAILED(400, "请求失败"),
     TOKEN_INVALID(500, "token校验失败"),
     VALIDATE_ERROR(1001, "参数校验失败"),
-    RESPONSE_PACK_ERROR(1002, "response返回包装失败");
+    RESPONSE_PACK_ERROR(1002, "response返回包装失败"),
+    APP_ERROR(2000,"业务异常");
 
     private int code;
     private String msg;

@@ -1,7 +1,6 @@
-package com.svmall.gatewayadmin.exception;
+package com.svmall.common.exception;
 
-import com.svmall.gatewayadmin.vo.AppCode;
-import com.svmall.gatewayadmin.vo.StatusCode;
+import com.svmall.common.vo.StatusCode;
 import lombok.Getter;
 
 /**
@@ -10,12 +9,12 @@ import lombok.Getter;
  * @apiNote 异常处理
  */
 @Getter
-public class ApiException extends RuntimeException {
+public class ErrorException extends RuntimeException {
     private int code;
     private String msg;
 
     // 手动设置异常
-    public ApiException(StatusCode statusCode, String message) {
+    public ErrorException(StatusCode statusCode, String message) {
         // message用于用户设置抛出错误详情，例如：当前价格-5，小于0
         super(message);
         // 状态码
@@ -24,11 +23,12 @@ public class ApiException extends RuntimeException {
         this.msg = statusCode.getMsg();
     }
 
-    // 默认异常使用APP_ERROR状态码
-    public ApiException(String message) {
+    // 自定义异常信息
+    public ErrorException(int code, String msg, String message) {
         super(message);
-        this.code = AppCode.APP_ERROR.getCode();
-        this.msg = AppCode.APP_ERROR.getMsg();
+        this.code = code;
+        this.msg=msg;
+
     }
 
 }
