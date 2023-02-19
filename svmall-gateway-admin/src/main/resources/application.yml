@@ -1,23 +1,4 @@
 spring:
-  application:
-    name: gateway-admin  # nacos
-  cloud:
-    nacos:
-      server-addr: 127.0.0.1:8848
-      discovery:
-        server-addr: ${spring.cloud.nacos.server-addr}
-        namespace: 29708712-1f65-488e-965a-acd5adea43fe
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-      routes:
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/api/user/**
-          filters:
-            - StripPrefix=2
   redis:
     # Redis默认情况下有16个分片(库)，这里配置具体使用的分片，默认是0
     database: 0
