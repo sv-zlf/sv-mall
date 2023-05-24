@@ -1,10 +1,8 @@
 server:
-  port: 8010
+  port: 8020
 spring:
-#  profiles:
-#    active: dev # ????
   application:
-    name: user-service # ???
+    name: shopcart-service
   datasource: # mysql?????
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,11 +12,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848 # 服务注册中心地址
+        server-addr: localhost:8848 # ????????
         namespace: 29708712-1f65-488e-965a-acd5adea43fe
         username: nacos
         password: nacos
-mybatis-plus: #mybatis
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:com/svmall/user/mapper/xml/*.xml

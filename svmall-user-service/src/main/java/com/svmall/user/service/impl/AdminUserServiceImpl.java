@@ -10,7 +10,6 @@ import com.svmall.user.entity.AdminUser;
 import com.svmall.user.mapper.AdminUserMapper;
 import com.svmall.user.service.AdminUserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -31,10 +30,8 @@ public class AdminUserServiceImpl extends ServiceImpl<AdminUserMapper, AdminUser
     @Autowired
     AdminUserMapper adminUserMapper;
 
-    @Autowired
     private RedisUtil redisUtil;
 
-    @Value("${spring.redis.jwt}")
     private String key;
 
     @Override

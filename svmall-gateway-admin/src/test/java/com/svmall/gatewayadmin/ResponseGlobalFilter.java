@@ -1,4 +1,4 @@
-package com.svmall.gatewayadmin.filter;
+package com.svmall.gatewayadmin;
 
 
 
@@ -61,7 +61,7 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
 
                         log.info("原始Response:{}", lastStr);
 
-                        if(lastStr.contains("swagger")) {
+                        if(lastStr.contains("swagger")||lastStr.contains("produces")||lastStr.contains("v2")) {
                             return bufferFactory.wrap(content);
                         }
                         //在此处处理返回结果

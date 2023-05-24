@@ -8,7 +8,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+
 
 
 /**
@@ -19,7 +19,6 @@ import javax.validation.Valid;
  * @author zlf
  * @since 2023-02-03
  */
-@CrossOrigin
 @RestController
 @RequestMapping("/adminUser")
 public class AdminUserController {
@@ -34,7 +33,7 @@ public class AdminUserController {
 
     @ApiOperation(value = "登录接口", notes = "返回token")
     @PostMapping("/login")
-    public String login(@RequestBody @Valid AdminLoginParam adminLoginParam) {
+    public String login(@RequestBody AdminLoginParam adminLoginParam) {
         return adminUserService.login(adminLoginParam);
     }
 

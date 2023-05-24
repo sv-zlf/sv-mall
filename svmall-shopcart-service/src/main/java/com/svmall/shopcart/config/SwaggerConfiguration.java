@@ -1,4 +1,4 @@
-package com.svmall.user.config;
+package com.svmall.shopcart.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,13 +18,13 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 @Import(BeanValidatorPluginsConfiguration.class)
 public class SwaggerConfiguration {
 
-    @Bean(value = "userApi")
+    @Bean(value = "cartApi")
     @Order(value = 1)
     public Docket groupRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(groupApiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.svmall.user.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.svmall.shopcart.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }
