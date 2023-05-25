@@ -1,16 +1,13 @@
-package com.svmall.gatewayadmin;
-
-
+package com.svmall.gatewayadmin.filter;
 
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.svmall.common.exception.ErrorException;
-import com.svmall.common.vo.ResultCode;
-import com.svmall.common.vo.ResultVo;
+import com.svmall.gatewayadmin.exception.ErrorException;
+import com.svmall.gatewayadmin.vo.ResultCode;
+import com.svmall.gatewayadmin.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.reactivestreams.Publisher;
@@ -61,7 +58,7 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
 
                         log.info("原始Response:{}", lastStr);
 
-                        if(lastStr.contains("swagger")||lastStr.contains("produces")||lastStr.contains("v2")) {
+                        if(lastStr.contains("swagger")||lastStr.contains("produces")) {
                             return bufferFactory.wrap(content);
                         }
                         //在此处处理返回结果

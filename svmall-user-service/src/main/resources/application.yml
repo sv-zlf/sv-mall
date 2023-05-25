@@ -5,12 +5,6 @@ spring:
 #    active: dev # ????
   application:
     name: user-service # ???
-  datasource: # mysql?????
-    type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mall_user?serverTimezone=GMT%2B8&characterEncoding=utf-8
-    username: root
-    password: 123456
   cloud:
     nacos:
       discovery:
@@ -18,7 +12,3 @@ spring:
         namespace: 29708712-1f65-488e-965a-acd5adea43fe
         username: nacos
         password: nacos
-mybatis-plus: #mybatis
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:com/svmall/user/mapper/xml/*.xml

@@ -1,6 +1,7 @@
-package com.svmall.gatewayadmin;
+package com.svmall.gatewayadmin.config;
 
 
+import com.svmall.gatewayadmin.handler.JsonExceptionHandler;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.ServerProperties;
@@ -64,7 +65,7 @@ public class ErrorHandlerConfiguration  {
                 this.resourceProperties,
                 this.serverProperties.getError(),
                 this.applicationContext);
-     //   exceptionHandler.setViewResolvers(this.viewResolvers);
+    //    exceptionHandler.setViewResolvers(this.viewResolvers);
         exceptionHandler.setMessageWriters(this.serverCodecConfigurer.getWriters());
         exceptionHandler.setMessageReaders(this.serverCodecConfigurer.getReaders());
         return exceptionHandler;
