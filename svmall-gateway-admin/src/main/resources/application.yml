@@ -15,13 +15,13 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: shopcart-service
-          uri: lb://shopcart-service
-          predicates:
-            - Path=/api/shopcart/**
-          filters:
-            - SwaggerHeaderFilter
-            - StripPrefix=2
+#        - id: shopcart-service
+#          uri: lb://shopcart-service
+#          predicates:
+#            - Path=/api/shopcart/**
+#          filters:
+#            - SwaggerHeaderFilter
+#            - StripPrefix=2
         - id: user-service
           uri: lb://user-service
           predicates:
@@ -29,3 +29,9 @@ spring:
           filters:
             - SwaggerHeaderFilter
             - StripPrefix=2
+nacos:
+  gateway:
+    route:
+      config:
+        data-id: gateway-router
+        group:   DEFAULT_GROUP
