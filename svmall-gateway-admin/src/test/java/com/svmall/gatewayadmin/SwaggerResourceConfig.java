@@ -1,4 +1,4 @@
-package com.svmall.gatewayadmin.config;
+package com.svmall.gatewayadmin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

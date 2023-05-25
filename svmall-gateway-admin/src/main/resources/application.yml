@@ -8,8 +8,8 @@ spring:
       discovery:
         server-addr: localhost:8848 # 服务注册中心地址
         namespace: 29708712-1f65-488e-965a-acd5adea43fe
-        username: nacos
-        password: nacos
+#        username: nacos
+#        password: nacos
     gateway:
       discovery:
         locator:
@@ -22,13 +22,13 @@ spring:
 #          filters:
 #            - SwaggerHeaderFilter
 #            - StripPrefix=2
-        - id: user-service
-          uri: lb://user-service
-          predicates:
-            - Path=/api/user/**
-          filters:
-            - SwaggerHeaderFilter
-            - StripPrefix=2
+#        - id: user-service
+#          uri: lb://user-service
+#          predicates:
+#            - Path=/api/user/**
+#          filters:
+#            - SwaggerHeaderFilter
+#            - StripPrefix=2
 nacos:
   gateway:
     route:
