@@ -24,6 +24,7 @@
         <module>svmall-shopcart-service</module>
         <module>svmall-gateway-admin</module>
         <module>svmall-common</module>
+        <module>svmall-auth</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
