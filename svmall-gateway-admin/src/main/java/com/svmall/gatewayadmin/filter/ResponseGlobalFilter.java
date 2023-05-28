@@ -56,9 +56,9 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                         DataBufferUtils.release(dataBuffer);
                         String lastStr = new String(content, Charset.forName("UTF-8"));
 
-                        log.info("原始Response:{}", lastStr);
+                        log.info("原始Response{}:", lastStr);
 
-                        if(lastStr.contains("swagger")||lastStr.contains("produces")) {
+                        if(lastStr.contains("swagger")) {
                             return bufferFactory.wrap(content);
                         }
                         //在此处处理返回结果
@@ -78,19 +78,10 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                             }
                         }
                         else{
-
                             lastStr = JSONUtil.toJsonStr(new ResultVo(lastStr));
                             originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
                             return bufferFactory.wrap(lastStr.getBytes());
                         }
-//                        switch (jsonObject.getInt(CODE)) {
-//                            case NO_SUCH_MESSAGE:
-//                                lastStr = JSONUtil.toJsonStr(getGlobalResponse(jsonObject));
-//                                log.info("国际化处理后Response:{}", lastStr);
-//                                return bufferFactory.wrap(lastStr.getBytes());
-//                        }
-                        //不处理异常则用json转换前的数据返回
-                       // return bufferFactory.wrap(content);
                     }));
                 }
                 return super.writeWith(body);

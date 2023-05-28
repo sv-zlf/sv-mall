@@ -1,0 +1,90 @@
+2023-05-27 18:27:15,383 INFO Client connection 192.168.0.104:51866#true connect
+
+2023-05-27 18:27:15,433 INFO Client connection 192.168.137.1:9090#true connect
+
+2023-05-27 18:27:15,433 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=0}, 192.168.137.1:9090#true
+
+2023-05-27 18:27:36,100 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, 192.168.137.1:9090#true
+
+2023-05-27 18:27:57,494 INFO Client connection 192.168.0.104:61706#true connect
+
+2023-05-27 18:27:57,532 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=2}, 192.168.137.1:9090#true
+
+2023-05-27 18:28:07,026 INFO Client connection 192.168.0.104:51866#true disconnect, remove instances and subscribers
+
+2023-05-27 19:02:01,002 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=3}, 192.168.137.1:9090#true
+
+2023-05-27 19:02:22,463 INFO Client connection 192.168.0.104:59838#true connect
+
+2023-05-27 19:02:22,500 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=4}, 192.168.137.1:9090#true
+
+2023-05-27 19:02:35,025 INFO Client connection 192.168.0.104:61706#true disconnect, remove instances and subscribers
+
+2023-05-27 19:03:11,605 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=5}, 192.168.137.1:9090#true
+
+2023-05-27 19:03:30,392 INFO Client connection 192.168.0.104:59670#true connect
+
+2023-05-27 19:03:30,430 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=6}, 192.168.137.1:9090#true
+
+2023-05-27 19:03:45,153 INFO Client connection 192.168.0.104:59838#true disconnect, remove instances and subscribers
+
+2023-05-27 19:08:14,349 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=7}, 192.168.137.1:9090#true
+
+2023-05-27 19:08:34,979 INFO Client connection 192.168.0.104:52236#true connect
+
+2023-05-27 19:08:35,016 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=8}, 192.168.137.1:9090#true
+
+2023-05-27 19:08:55,652 INFO Client connection 192.168.0.104:59670#true disconnect, remove instances and subscribers
+
+2023-05-27 19:09:47,135 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=9}, 192.168.137.1:9090#true
+
+2023-05-27 19:10:20,770 INFO Client connection 192.168.137.1:9090#true disconnect, remove instances and subscribers
+
+2023-05-27 19:10:30,783 INFO Client connection 192.168.0.104:52236#true disconnect, remove instances and subscribers
+
+2023-05-27 19:11:09,238 WARN namespace : 29708712-1f65-488e-965a-acd5adea43fe, [DEFAULT_GROUP@@auth-server] services are automatically cleaned
+
+2023-05-27 21:34:52,161 INFO Client connection 192.168.0.104:63852#true connect
+
+2023-05-27 21:34:52,201 INFO Client connection 192.168.137.1:9090#true connect
+
+2023-05-27 21:34:52,201 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=0}, 192.168.137.1:9090#true
+
+2023-05-27 21:36:30,612 INFO Client connection 192.168.0.104:60855#true connect
+
+2023-05-27 21:36:33,186 INFO Client connection 192.168.137.1:8810#true connect
+
+2023-05-27 21:36:33,186 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=0}, 192.168.137.1:8810#true
+
+2023-05-27 21:40:53,104 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=1}, 192.168.137.1:8810#true
+
+2023-05-27 21:41:13,687 INFO Client connection 192.168.0.104:54448#true connect
+
+2023-05-27 21:41:16,309 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=2}, 192.168.137.1:8810#true
+
+2023-05-27 21:41:24,855 INFO Client connection 192.168.0.104:60855#true disconnect, remove instances and subscribers
+
+2023-05-27 21:43:15,351 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, 192.168.137.1:9090#true
+
+2023-05-27 21:43:34,950 INFO Client connection 192.168.0.104:61922#true connect
+
+2023-05-27 21:43:34,985 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=2}, 192.168.137.1:9090#true
+
+2023-05-27 21:43:55,105 INFO Client connection 192.168.0.104:63852#true disconnect, remove instances and subscribers
+
+2023-05-27 21:45:00,771 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=3}, 192.168.137.1:9090#true
+
+2023-05-27 21:45:22,301 INFO Client connection 192.168.0.104:62455#true connect
+
+2023-05-27 21:45:22,340 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=4}, 192.168.137.1:9090#true
+
+2023-05-27 21:45:40,251 INFO Client connection 192.168.0.104:61922#true disconnect, remove instances and subscribers
+
+2023-05-27 21:46:51,620 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=5}, 192.168.137.1:9090#true
+
+2023-05-27 21:47:13,860 INFO Client connection 192.168.0.104:60902#true connect
+
+2023-05-27 21:47:13,895 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=6}, 192.168.137.1:9090#true
+
+2023-05-27 21:47:25,386 INFO Client connection 192.168.0.104:62455#true disconnect, remove instances and subscribers
+

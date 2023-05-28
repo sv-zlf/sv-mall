@@ -29,16 +29,18 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
         //2.放行登录与swagger测试
-        if(request.getURI().getPath().contains("/v2/api-docs")||request.getURI().getPath().contains("/login")||request.getURI().getPath().contains("/hello")){
+        if(request.getURI().getPath().contains("/v2/api-docs")||request.getURI().getPath().contains("/login")||request.getURI().getPath().contains("/hello")||request.getURI().getPath().contains("auth")){
             return chain.filter(exchange);
         }
         log.info("当前请求路径："+request.getURI().getPath());
+
         //3.获取token和key
         String token = request.getHeaders().getFirst("token");
         //4.判断token是否存在
         if(StringUtils.isBlank(token)){
             throw new ErrorException(ResultCode.TOKEN_INVALID, "token不存在");
         }
+
         //5.获取缓存中是否存在token
         //Object value=redisUtil.get(token);
         //if (value.equals("")){

@@ -1,0 +1,10 @@
+2023-05-28 10:55:25,942 INFO {POS} {IP-DISABLED} valid: 192.168.137.1:9090@DEFAULT@auth-server, region: unknown, msg: client last beat: 1685206313532
+
+2023-05-28 10:55:25,942 INFO {POS} {IP-DISABLED} valid: 192.168.137.1:8810@DEFAULT@gateway-admin, region: unknown, msg: client last beat: 1685206316383
+
+2023-05-28 11:26:34,796 INFO {POS} {IP-DISABLED} valid: 192.168.137.1:9090@DEFAULT@auth-server, region: unknown, msg: client last beat: 1685244379097
+
+2023-05-28 11:26:39,903 INFO service: DEFAULT_GROUP@@auth-server {POS} {IP-ENABLED} valid: 192.168.137.1:9090@DEFAULT, region: unknown, msg: client beat ok
+
+2023-05-28 11:27:04,836 INFO {POS} {IP-DISABLED} valid: 192.168.137.1:9090@DEFAULT@auth-server, region: unknown, msg: client last beat: 1685244407665
+
