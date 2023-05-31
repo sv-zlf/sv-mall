@@ -2,6 +2,7 @@ package com.svmall.user.controller;
 
 
 import com.svmall.user.controller.parm.AdminLoginParam;
+import com.svmall.user.entity.AdminUser;
 import com.svmall.user.service.AdminUserService;
 
 import io.swagger.annotations.ApiOperation;
@@ -35,6 +36,13 @@ public class AdminUserController {
     @PostMapping("/login")
     public String login(@RequestBody AdminLoginParam adminLoginParam) {
         return adminUserService.login(adminLoginParam);
+    }
+
+    @GetMapping("/hello1")
+    public AdminUser hello1() {
+        AdminUser adminUser = new AdminUser();
+        adminUser.setUserName("ddd");
+        return adminUser;
     }
 
 }

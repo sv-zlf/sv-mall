@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: auth-server
+    name: auth-service
 #  redis:
 #    port: 63790
 #    host: 127.0.0.1
@@ -24,7 +24,7 @@ encrypt:
     password: yalong
 auth:
   ttl: 3600  #token存储到redis的过期时间
-  clientId: yalong
-  clientSecret: yalong
+  clientId: svmall
+  clientSecret: bf262126
   cookieDomain: localhost
   cookieMaxAge: -1

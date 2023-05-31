@@ -3,6 +3,7 @@ package com.svmall.gatewayadmin.filter;
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.svmall.gatewayadmin.exception.ErrorException;
@@ -62,30 +63,22 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                         if(lastStr.contains("swagger")) {
                             return bufferFactory.wrap(content);
                         }
+
                         //在此处处理返回结果
                         // String类型不能直接包装
                         if(!isJsonObject(lastStr)){
-                            System.out.println("字符串类型");
-                            ObjectMapper objectMapper = new ObjectMapper();
-                            try {
-                                JSONObject json = JSONUtil.parseObj(new ResultVo(lastStr), false);
-
-                                // 将数据包装在ResultVo里后转换为json串进行返回
-                                byte[] newRs =objectMapper.writeValueAsBytes(new ResultVo(lastStr));
-                                byte[] bytes = json.toStringPretty().getBytes(StandardCharsets.UTF_8);
-                                //String lastStrNew=JSONUtil.toJsonStr(objectMapper.writeValueAsString(new ResultVo(lastStr)));
-                                //JSONObject jsonObject =JSONUtil.parseObj(lastStrNew);
-//                                log.info("转化后的lastStr："+lastStr.getBytes());
-                                //需要重新设置长度，不然显示不全
-                                originalResponse.getHeaders().setContentLength(bytes.length);
-                                 return bufferFactory.wrap(bytes);
-                            } catch (JsonProcessingException e) {
-                                throw new ErrorException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
-                            }
+                          //  System.out.println("字符串类型");
+                            JSONObject json = JSONUtil.parseObj(new ResultVo(lastStr), false);
+                            // 将数据包装在ResultVo里后转换为json串进行返回
+                            byte[] bytes = json.toStringPretty().getBytes(StandardCharsets.UTF_8);
+                            //需要重新设置长度，不然显示不全
+                            originalResponse.getHeaders().setContentLength(bytes.length);
+                            return bufferFactory.wrap(bytes);
                         }
                         else{
                             System.out.println("非字符串");
-                            lastStr = JSONUtil.toJsonStr(new ResultVo(lastStr));
+                            JSONObject jsonObject = JSONUtil.parseObj(lastStr);
+                            lastStr = JSONUtil.toJsonStr(new ResultVo(jsonObject));
                             originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
                             return bufferFactory.wrap(lastStr.getBytes());
                         }

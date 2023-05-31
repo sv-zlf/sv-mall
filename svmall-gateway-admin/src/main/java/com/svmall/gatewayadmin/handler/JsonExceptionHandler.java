@@ -37,6 +37,7 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
     protected Map<String, Object> getErrorAttributes(ServerRequest request,ErrorAttributeOptions options) {
         int code = 888;
         Throwable error = super.getError(request);
+        System.out.println("error:"+options);
         return response(code, this.buildMessage(request, error));
     }
 
@@ -86,7 +87,6 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
      * @return
      */
     public static Map<String, Object> response(int status, String errorMessage) {
-
         JSONObject jsonObject = JSON.parseObject(JSON.toJSONString(new ResultVo(ResultCode.APP_ERROR,errorMessage)));
         return jsonObject;
     }

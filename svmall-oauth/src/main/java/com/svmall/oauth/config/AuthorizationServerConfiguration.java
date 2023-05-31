@@ -8,6 +8,7 @@ package com.svmall.oauth.config;
 import com.svmall.oauth.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
@@ -44,8 +45,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
      * Refresh Token 时需要自定义实现，否则抛异常 <br>
      * Lazy 注解是为了防止循环注入（is there an unresolvable circular reference?）
      */
-    @Lazy
-    @Qualifier("userDetailsServiceBean")
+    @Autowired
     private UserDetailsService  userDetailsService;
 
     @Autowired
@@ -61,9 +61,14 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
     @Autowired
     BCryptPasswordEncoder passwordEncoder;
 
+    @Value("${auth.clientId}")
+    private String clientId;
+    @Value("${auth.clientSecret}")
+    private String clientSecret;
+
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory().withClient("client_1").secret(this.passwordEncoder.encode("123456"))
+        clients.inMemory().withClient(clientId).secret(this.passwordEncoder.encode(clientSecret))
                 .authorizedGrantTypes("password")
                 .scopes("all");
 

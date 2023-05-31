@@ -19,4 +19,9 @@ public class TestController {
     public String hello() {
         return "hello,world!";
     }
+
+    @GetMapping("/yyy")
+    public String yyy(){
+        return "sss";
+    }
 }

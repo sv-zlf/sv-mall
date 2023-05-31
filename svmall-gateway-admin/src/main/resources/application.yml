@@ -35,3 +35,9 @@ nacos:
       config:
         data-id: gateway-router
         group:   DEFAULT_GROUP
+auth:
+  ttl: 3600  #token存储到redis的过期时间
+  clientId: svmall
+  clientSecret: bf262126
+  cookieDomain: localhost
+  cookieMaxAge: -1

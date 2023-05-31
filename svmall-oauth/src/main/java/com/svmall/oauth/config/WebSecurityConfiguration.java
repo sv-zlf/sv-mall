@@ -1,10 +1,14 @@
 package com.svmall.oauth.config;
 
 import com.svmall.oauth.service.CustomUserDetailsService;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
@@ -20,6 +24,8 @@ import org.springframework.security.oauth2.provider.approval.TokenStoreUserAppro
 import org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+
+import java.util.stream.Collectors;
 
 /**
  * @author zlf
@@ -82,5 +88,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         store.setTokenStore(jwtTokenStore);
         return store;
     }
+
+
 
 }
