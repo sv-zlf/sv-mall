@@ -26,6 +26,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 
 /**
@@ -64,20 +65,26 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                         //在此处处理返回结果
                         // String类型不能直接包装
                         if(!isJsonObject(lastStr)){
+                            System.out.println("字符串类型");
                             ObjectMapper objectMapper = new ObjectMapper();
                             try {
+                                JSONObject json = JSONUtil.parseObj(new ResultVo(lastStr), false);
+
                                 // 将数据包装在ResultVo里后转换为json串进行返回
                                 byte[] newRs =objectMapper.writeValueAsBytes(new ResultVo(lastStr));
-//                                lastStr=JSONUtil.toJsonStr(objectMapper.writeValueAsString());
+                                byte[] bytes = json.toStringPretty().getBytes(StandardCharsets.UTF_8);
+                                //String lastStrNew=JSONUtil.toJsonStr(objectMapper.writeValueAsString(new ResultVo(lastStr)));
+                                //JSONObject jsonObject =JSONUtil.parseObj(lastStrNew);
 //                                log.info("转化后的lastStr："+lastStr.getBytes());
                                 //需要重新设置长度，不然显示不全
-                                originalResponse.getHeaders().setContentLength(newRs.length);
-                                 return bufferFactory.wrap(newRs);
+                                originalResponse.getHeaders().setContentLength(bytes.length);
+                                 return bufferFactory.wrap(bytes);
                             } catch (JsonProcessingException e) {
                                 throw new ErrorException(ResultCode.RESPONSE_PACK_ERROR, e.getMessage());
                             }
                         }
                         else{
+                            System.out.println("非字符串");
                             lastStr = JSONUtil.toJsonStr(new ResultVo(lastStr));
                             originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
                             return bufferFactory.wrap(lastStr.getBytes());
