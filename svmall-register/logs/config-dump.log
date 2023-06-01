@@ -1,4 +1,6 @@
-2023-06-01 21:34:25,296 INFO [dump-all-ok] gateway-router+DEFAULT_GROUP, 1685543032117, length=909, md5=b19ce796362e7fd21ec08fa1e0bffe23
+2023-05-30 00:16:16,771 INFO [dump-task] add task. groupKey=gateway-router+DEFAULT_GROUP+29708712-1f65-488e-965a-acd5adea43fe, taskKey=gateway-router+DEFAULT_GROUP+29708712-1f65-488e-965a-acd5adea43fe+false+null
 
-2023-06-01 21:39:32,517 INFO [dump-all-ok] gateway-router+DEFAULT_GROUP, 1685543032117, length=909, md5=b19ce796362e7fd21ec08fa1e0bffe23
+2023-05-30 22:12:33,680 INFO [dump-all-ok] gateway-router+DEFAULT_GROUP, 1685376976767, length=907, md5=9f80c8764c219508f5e6784d6edccbdb
+
+2023-05-30 22:44:34,589 INFO [dump-task] add task. groupKey=gateway-router+DEFAULT_GROUP+29708712-1f65-488e-965a-acd5adea43fe, taskKey=gateway-router+DEFAULT_GROUP+29708712-1f65-488e-965a-acd5adea43fe+false+null
 

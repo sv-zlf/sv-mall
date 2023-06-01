@@ -1,242 +1,54 @@
-2023-06-01 00:02:40,500 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=25}, 192.168.137.1:8810#true
+2023-05-31 00:31:41,545 INFO Client connection 192.168.0.104:60867#true connect
 
-2023-06-01 00:03:03,558 INFO Client connection 192.168.0.104:56889#true connect
+2023-05-31 00:31:44,228 INFO Client connection 192.168.137.1:8810#true connect
 
-2023-06-01 00:03:06,195 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=26}, 192.168.137.1:8810#true
+2023-05-31 00:31:44,228 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=0}, 192.168.137.1:8810#true
 
-2023-06-01 00:03:16,675 INFO Client connection 192.168.0.104:63053#true disconnect, remove instances and subscribers
+2023-05-31 00:38:29,344 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=1}, 192.168.137.1:8810#true
 
-2023-06-01 00:03:44,021 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=27}, 192.168.137.1:8810#true
+2023-05-31 00:38:48,993 INFO Client connection 192.168.0.104:65205#true connect
 
-2023-06-01 00:04:06,400 INFO Client connection 192.168.0.104:50034#true connect
+2023-05-31 00:38:51,640 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=2}, 192.168.137.1:8810#true
 
-2023-06-01 00:04:09,085 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=28}, 192.168.137.1:8810#true
+2023-05-31 00:39:08,884 INFO Client connection 192.168.0.104:60867#true disconnect, remove instances and subscribers
 
-2023-06-01 00:04:21,688 INFO Client connection 192.168.0.104:56889#true disconnect, remove instances and subscribers
+2023-05-31 00:48:42,640 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=3}, 192.168.137.1:8810#true
 
-2023-06-01 21:34:26,181 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+2023-05-31 00:49:06,605 INFO Client connection 192.168.0.104:51158#true connect
 
-2023-06-01 21:34:26,181 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+2023-05-31 00:49:09,273 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=4}, 192.168.137.1:8810#true
 
-2023-06-01 21:34:26,181 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+2023-05-31 00:49:23,964 INFO Client connection 192.168.0.104:65205#true disconnect, remove instances and subscribers
 
-2023-06-01 21:34:26,181 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+2023-05-31 00:50:19,649 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=5}, 192.168.137.1:8810#true
 
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:50:42,227 INFO Client connection 192.168.0.104:62439#true connect
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:50:44,882 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=6}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:50:58,983 INFO Client connection 192.168.0.104:51158#true disconnect, remove instances and subscribers
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:52:14,389 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=7}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:52:34,394 INFO Client connection 192.168.0.104:65297#true connect
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:52:37,036 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=8}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:52:48,996 INFO Client connection 192.168.0.104:62439#true disconnect, remove instances and subscribers
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:53:15,729 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=9}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:53:36,596 INFO Client connection 192.168.0.104:50259#true connect
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:53:39,232 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=10}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:53:49,002 INFO Client connection 192.168.0.104:65297#true disconnect, remove instances and subscribers
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,919 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:54:47,821 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=11}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,919 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:55:08,670 INFO Client connection 192.168.0.104:51130#true connect
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,919 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:55:11,294 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=12}, 192.168.137.1:8810#true
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:34:26,917 ERROR [TASK-FAILED] java.lang.InterruptedException
+2023-05-31 00:55:24,013 INFO Client connection 192.168.0.104:50259#true disconnect, remove instances and subscribers
 
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:33,364 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
-
-2023-06-01 21:39:33,364 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
-
-2023-06-01 21:39:33,365 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
-
-2023-06-01 21:39:33,365 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
-
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,090 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,090 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,089 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,090 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
-2023-06-01 21:39:34,090 ERROR [TASK-FAILED] java.lang.InterruptedException
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
-	at java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
-	at com.alibaba.nacos.common.task.engine.TaskExecuteWorker$InnerWorker.run(TaskExecuteWorker.java:118)
