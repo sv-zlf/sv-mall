@@ -1,0 +1,416 @@
+2023-05-29 21:31:44,365 INFO [PUSH] Task merge for Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}
+
+2023-05-29 21:31:44,886 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 21:31:44,894 INFO serviceName: DEFAULT_GROUP@@auth-server@@DEFAULT changed, schedule push for: 192.168.0.104:53543, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,53543,81368379689400
+
+2023-05-29 21:31:44,895 INFO send udp packet: 192.168.0.104,53543,81368379689400
+
+2023-05-29 21:31:44,914 INFO [PUSH-SUCC] 29ms, all delay time 614ms, SLA 549ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 21:35:09,353 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 21:35:09,353 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,81572846560400
+
+2023-05-29 21:35:09,353 INFO send udp packet: 192.168.0.104,60159,81572846560400
+
+2023-05-29 21:35:09,357 INFO [PUSH-SUCC] 3ms, all delay time 555ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 21:35:11,404 INFO [PUSH] Task merge for Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=1}
+
+2023-05-29 21:35:11,769 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 21:35:11,770 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,81575262689100
+
+2023-05-29 21:35:11,770 INFO send udp packet: 192.168.0.104,60159,81575262689100
+
+2023-05-29 21:35:11,772 INFO [PUSH-SUCC] 3ms, all delay time 507ms, SLA 368ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:23:41,430 INFO [PUSH] Task merge for Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=1}
+
+2023-05-29 23:23:41,967 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:23:41,967 INFO serviceName: DEFAULT_GROUP@@shopcart-service@@DEFAULT changed, schedule push for: 192.168.0.104:58040, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,58040,88085459863100
+
+2023-05-29 23:23:41,967 INFO send udp packet: 192.168.0.104,58040,88085459863100
+
+2023-05-29 23:23:41,984 INFO [PUSH-SUCC] 17ms, all delay time 595ms, SLA 554ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=1}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:24:35,168 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:24:35,168 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,88138660991100
+
+2023-05-29 23:24:35,168 INFO send udp packet: 192.168.0.104,60159,88138660991100
+
+2023-05-29 23:24:35,169 INFO [PUSH-SUCC] 1ms, all delay time 567ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:31:02,707 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:31:02,707 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,88526199993300
+
+2023-05-29 23:31:02,707 INFO send udp packet: 192.168.0.104,60159,88526199993300
+
+2023-05-29 23:31:02,709 INFO [PUSH-SUCC] 2ms, all delay time 542ms, SLA 542ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:31:07,755 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:07,755 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,88531247952400
+
+2023-05-29 23:31:07,755 INFO send udp packet: 192.168.0.104,60159,88531247952400
+
+2023-05-29 23:31:07,755 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:07,756 INFO serviceName: DEFAULT_GROUP@@shopcart-service@@DEFAULT changed, schedule push for: 192.168.0.104:58040, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,58040,88531248120500
+
+2023-05-29 23:31:07,756 INFO send udp packet: 192.168.0.104,58040,88531248120500
+
+2023-05-29 23:31:07,758 INFO [PUSH-SUCC] 3ms, all delay time 521ms, SLA 521ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:31:07,759 INFO [PUSH-SUCC] 4ms, all delay time 522ms, SLA 522ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=2}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:31:24,322 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:24,322 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 23:31:24,322 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:31:24,322 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88547814948700
+
+2023-05-29 23:31:24,322 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88547814978300
+
+2023-05-29 23:31:24,322 INFO send udp packet: 192.168.0.104,52768,88547814948700
+
+2023-05-29 23:31:24,323 INFO send udp packet: 192.168.0.104,52768,88547814978300
+
+2023-05-29 23:31:24,322 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88547814966200
+
+2023-05-29 23:31:24,325 INFO [PUSH-SUCC] 3ms, all delay time 555ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=2}, originalSize=0, DataSize=0
+
+2023-05-29 23:31:24,325 INFO send udp packet: 192.168.0.104,52768,88547814966200
+
+2023-05-29 23:31:24,326 INFO [PUSH-SUCC] 4ms, all delay time 556ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=2}, originalSize=0, DataSize=0
+
+2023-05-29 23:31:24,326 INFO [PUSH-SUCC] 4ms, all delay time 556ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:31:26,948 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:31:26,948 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,88550440968300
+
+2023-05-29 23:31:26,948 INFO send udp packet: 192.168.0.104,60159,88550440968300
+
+2023-05-29 23:31:26,948 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:31:26,948 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88550441495000
+
+2023-05-29 23:31:26,948 INFO send udp packet: 192.168.0.104,52768,88550441495000
+
+2023-05-29 23:31:26,951 INFO [PUSH-SUCC] 3ms, all delay time 554ms, SLA 554ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:31:29,172 INFO [PUSH] Task merge for Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}
+
+2023-05-29 23:31:29,677 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:29,677 INFO serviceName: DEFAULT_GROUP@@shopcart-service@@DEFAULT changed, schedule push for: 192.168.0.104:53587, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,53587,88553170032100
+
+2023-05-29 23:31:29,677 INFO send udp packet: 192.168.0.104,53587,88553170032100
+
+2023-05-29 23:31:29,677 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:29,680 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:60159, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,60159,88553170507100
+
+2023-05-29 23:31:29,680 INFO send udp packet: 192.168.0.104,60159,88553170507100
+
+2023-05-29 23:31:29,680 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:29,681 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88553173798000
+
+2023-05-29 23:31:29,681 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:31:29,681 INFO serviceName: DEFAULT_GROUP@@shopcart-service@@DEFAULT changed, schedule push for: 192.168.0.104:58040, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,58040,88553173983600
+
+2023-05-29 23:31:29,681 INFO send udp packet: 192.168.0.104,52768,88553173798000
+
+2023-05-29 23:31:29,681 INFO send udp packet: 192.168.0.104,58040,88553173983600
+
+2023-05-29 23:31:29,683 INFO [PUSH-SUCC] 3ms, all delay time 562ms, SLA 511ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:31:29,692 INFO [PUSH-SUCC] 15ms, all delay time 571ms, SLA 520ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:31:36,949 INFO retry to push data, key: 192.168.0.104,60159,88550440968300
+
+2023-05-29 23:31:39,682 INFO retry to push data, key: 192.168.0.104,60159,88553170507100
+
+2023-05-29 23:31:39,684 INFO retry to push data, key: 192.168.0.104,58040,88553173983600
+
+2023-05-29 23:31:46,949 WARN max re-push times reached, retry times 2, key: 192.168.0.104,60159,88550440968300
+
+2023-05-29 23:31:46,949 ERROR [PUSH-FAIL] 20001ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=3}, reason=null, target=192.168.0.104
+
+2023-05-29 23:31:49,682 WARN max re-push times reached, retry times 2, key: 192.168.0.104,60159,88553170507100
+
+2023-05-29 23:31:49,682 ERROR [PUSH-FAIL] 20005ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, reason=null, target=192.168.0.104
+
+2023-05-29 23:31:49,687 WARN max re-push times reached, retry times 2, key: 192.168.0.104,58040,88553173983600
+
+2023-05-29 23:31:49,687 ERROR [PUSH-FAIL] 20006ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, reason=null, target=192.168.0.104
+
+2023-05-29 23:37:15,093 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:37:15,093 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88898585935400
+
+2023-05-29 23:37:15,093 INFO send udp packet: 192.168.0.104,52768,88898585935400
+
+2023-05-29 23:37:15,095 INFO [PUSH-SUCC] 2ms, all delay time 572ms, SLA 572ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:37:39,725 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:37:39,725 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:37:39,725 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:52541, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52541,88923217845900
+
+2023-05-29 23:37:39,725 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 23:37:39,725 INFO send udp packet: 192.168.0.104,52541,88923217845900
+
+2023-05-29 23:37:39,725 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:52541, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52541,88923217834400
+
+2023-05-29 23:37:39,725 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:52541, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52541,88923217952500
+
+2023-05-29 23:37:39,725 INFO send udp packet: 192.168.0.104,52541,88923217834400
+
+2023-05-29 23:37:39,726 INFO send udp packet: 192.168.0.104,52541,88923217952500
+
+2023-05-29 23:37:39,727 INFO [PUSH-SUCC] 2ms, all delay time 514ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=4}, originalSize=0, DataSize=0
+
+2023-05-29 23:37:39,728 INFO [PUSH-SUCC] 3ms, all delay time 515ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-05-29 23:37:39,728 INFO [PUSH-SUCC] 3ms, all delay time 515ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:37:42,350 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:37:42,352 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:52768, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52768,88925843423500
+
+2023-05-29 23:37:42,352 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:37:42,352 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:52541, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52541,88925845448100
+
+2023-05-29 23:37:42,352 INFO send udp packet: 192.168.0.104,52768,88925843423500
+
+2023-05-29 23:37:42,352 INFO send udp packet: 192.168.0.104,52541,88925845448100
+
+2023-05-29 23:37:42,354 INFO [PUSH-SUCC] 2ms, all delay time 577ms, SLA 577ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=5}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:37:52,353 INFO retry to push data, key: 192.168.0.104,52768,88925843423500
+
+2023-05-29 23:38:02,354 WARN max re-push times reached, retry times 2, key: 192.168.0.104,52768,88925843423500
+
+2023-05-29 23:38:02,354 ERROR [PUSH-FAIL] 20004ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=5}, reason=null, target=192.168.0.104
+
+2023-05-29 23:53:12,369 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:53:12,369 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:52541, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52541,89855861876000
+
+2023-05-29 23:53:12,369 INFO send udp packet: 192.168.0.104,52541,89855861876000
+
+2023-05-29 23:53:12,371 INFO [PUSH-SUCC] 2ms, all delay time 517ms, SLA 517ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=6}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:53:35,401 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:53:35,401 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:51071, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,51071,89878894029000
+
+2023-05-29 23:53:35,401 INFO send udp packet: 192.168.0.104,51071,89878894029000
+
+2023-05-29 23:53:35,405 INFO [PUSH-SUCC] 4ms, all delay time 541ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-05-29 23:53:35,406 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 23:53:35,406 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:51071, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,51071,89878898937100
+
+2023-05-29 23:53:35,406 INFO send udp packet: 192.168.0.104,51071,89878898937100
+
+2023-05-29 23:53:35,407 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:53:35,407 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:51071, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,51071,89878900355200
+
+2023-05-29 23:53:35,407 INFO send udp packet: 192.168.0.104,51071,89878900355200
+
+2023-05-29 23:53:35,408 INFO [PUSH-SUCC] 2ms, all delay time 544ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:53:35,409 INFO [PUSH-SUCC] 2ms, all delay time 545ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=6}, originalSize=0, DataSize=0
+
+2023-05-29 23:53:38,032 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:53:38,032 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:52541, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,52541,89881524894900
+
+2023-05-29 23:53:38,032 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:53:38,032 INFO send udp packet: 192.168.0.104,52541,89881524894900
+
+2023-05-29 23:53:38,032 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:51071, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,51071,89881525036600
+
+2023-05-29 23:53:38,032 INFO send udp packet: 192.168.0.104,51071,89881525036600
+
+2023-05-29 23:53:38,034 INFO [PUSH-SUCC] 2ms, all delay time 591ms, SLA 591ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=7}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:53:48,032 INFO retry to push data, key: 192.168.0.104,52541,89881524894900
+
+2023-05-29 23:53:58,035 WARN max re-push times reached, retry times 2, key: 192.168.0.104,52541,89881524894900
+
+2023-05-29 23:53:58,035 ERROR [PUSH-FAIL] 20003ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=7}, reason=null, target=192.168.0.104
+
+2023-05-29 23:55:26,856 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:55:26,856 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:51071, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,51071,89990349531000
+
+2023-05-29 23:55:26,856 INFO send udp packet: 192.168.0.104,51071,89990349531000
+
+2023-05-29 23:55:26,859 INFO [PUSH-SUCC] 3ms, all delay time 571ms, SLA 571ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=8}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:55:47,712 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:55:47,712 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:55:47,712 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 23:55:47,712 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:50430, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,50430,90011205643300
+
+2023-05-29 23:55:47,712 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:50430, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,50430,90011205639700
+
+2023-05-29 23:55:47,712 INFO send udp packet: 192.168.0.104,50430,90011205643300
+
+2023-05-29 23:55:47,712 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:50430, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,50430,90011205760600
+
+2023-05-29 23:55:47,713 INFO send udp packet: 192.168.0.104,50430,90011205639700
+
+2023-05-29 23:55:47,714 INFO send udp packet: 192.168.0.104,50430,90011205760600
+
+2023-05-29 23:55:47,714 INFO [PUSH-SUCC] 2ms, all delay time 579ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=8}, originalSize=0, DataSize=0
+
+2023-05-29 23:55:47,715 INFO [PUSH-SUCC] 3ms, all delay time 580ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-05-29 23:55:47,716 INFO [PUSH-SUCC] 4ms, all delay time 581ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:55:50,235 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:55:50,235 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:50430, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,50430,90013728279000
+
+2023-05-29 23:55:50,235 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:55:50,235 INFO send udp packet: 192.168.0.104,50430,90013728279000
+
+2023-05-29 23:55:50,235 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:51071, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,51071,90013728449300
+
+2023-05-29 23:55:50,235 INFO send udp packet: 192.168.0.104,51071,90013728449300
+
+2023-05-29 23:55:50,237 INFO [PUSH-SUCC] 2ms, all delay time 548ms, SLA 548ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=9}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:56:00,237 INFO retry to push data, key: 192.168.0.104,51071,90013728449300
+
+2023-05-29 23:56:10,239 WARN max re-push times reached, retry times 2, key: 192.168.0.104,51071,90013728449300
+
+2023-05-29 23:56:10,239 ERROR [PUSH-FAIL] 20004ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=9}, reason=null, target=192.168.0.104
+
+2023-05-29 23:57:34,142 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:57:34,142 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:50430, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,50430,90117634744200
+
+2023-05-29 23:57:34,142 INFO send udp packet: 192.168.0.104,50430,90117634744200
+
+2023-05-29 23:57:34,144 INFO [PUSH-SUCC] 2ms, all delay time 520ms, SLA 520ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=10}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:57:54,826 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:57:54,826 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:57:54,826 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:62715, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,62715,90138319343700
+
+2023-05-29 23:57:54,826 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 23:57:54,827 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:62715, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,62715,90138319334700
+
+2023-05-29 23:57:54,827 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:62715, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,62715,90138320161200
+
+2023-05-29 23:57:54,827 INFO send udp packet: 192.168.0.104,62715,90138319343700
+
+2023-05-29 23:57:54,827 INFO send udp packet: 192.168.0.104,62715,90138319334700
+
+2023-05-29 23:57:54,827 INFO send udp packet: 192.168.0.104,62715,90138320161200
+
+2023-05-29 23:57:54,829 INFO [PUSH-SUCC] 3ms, all delay time 530ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-05-29 23:57:54,830 INFO [PUSH-SUCC] 4ms, all delay time 531ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=10}, originalSize=0, DataSize=0
+
+2023-05-29 23:57:54,830 INFO [PUSH-SUCC] 4ms, all delay time 531ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:57:57,450 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:57:57,450 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:50430, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,50430,90140943431900
+
+2023-05-29 23:57:57,450 INFO send udp packet: 192.168.0.104,50430,90140943431900
+
+2023-05-29 23:57:57,450 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:57:57,450 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:62715, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,62715,90140943864900
+
+2023-05-29 23:57:57,450 INFO send udp packet: 192.168.0.104,62715,90140943864900
+
+2023-05-29 23:57:57,452 INFO [PUSH-SUCC] 2ms, all delay time 589ms, SLA 589ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=11}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:58:07,451 INFO retry to push data, key: 192.168.0.104,50430,90140943431900
+
+2023-05-29 23:58:17,452 WARN max re-push times reached, retry times 2, key: 192.168.0.104,50430,90140943431900
+
+2023-05-29 23:58:17,452 ERROR [PUSH-FAIL] 20002ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=11}, reason=null, target=192.168.0.104
+
+2023-05-29 23:58:46,665 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:58:46,665 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:62715, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,62715,90190158460100
+
+2023-05-29 23:58:46,665 INFO send udp packet: 192.168.0.104,62715,90190158460100
+
+2023-05-29 23:58:46,667 INFO [PUSH-SUCC] 2ms, all delay time 600ms, SLA 600ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=12}, originalSize=0, DataSize=0, target=192.168.0.104
+
+2023-05-29 23:59:10,055 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:59:10,055 INFO DEFAULT_GROUP@@auth-server is changed, add it to push queue.
+
+2023-05-29 23:59:10,055 INFO serviceName: DEFAULT_GROUP@@auth-server changed, schedule push for: 192.168.0.104:61987, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,61987,90213548509600
+
+2023-05-29 23:59:10,055 INFO DEFAULT_GROUP@@shopcart-service is changed, add it to push queue.
+
+2023-05-29 23:59:10,055 INFO serviceName: DEFAULT_GROUP@@gateway-admin changed, schedule push for: 192.168.0.104:61987, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,61987,90213548496700
+
+2023-05-29 23:59:10,055 INFO send udp packet: 192.168.0.104,61987,90213548509600
+
+2023-05-29 23:59:10,056 INFO serviceName: DEFAULT_GROUP@@shopcart-service changed, schedule push for: 192.168.0.104:61987, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,61987,90213548630000
+
+2023-05-29 23:59:10,062 INFO send udp packet: 192.168.0.104,61987,90213548496700
+
+2023-05-29 23:59:10,062 INFO [PUSH-SUCC] 7ms, all delay time 510ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=1}, originalSize=1, DataSize=1
+
+2023-05-29 23:59:10,062 INFO send udp packet: 192.168.0.104,61987,90213548630000
+
+2023-05-29 23:59:10,062 INFO [PUSH-SUCC] 7ms, all delay time 510ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=12}, originalSize=0, DataSize=0
+
+2023-05-29 23:59:10,063 INFO [PUSH-SUCC] 8ms, all delay time 511ms for subscriber 192.168.0.104, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=3}, originalSize=1, DataSize=1
+
+2023-05-29 23:59:12,684 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:59:12,684 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:61987, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,61987,90216177734000
+
+2023-05-29 23:59:12,684 INFO DEFAULT_GROUP@@gateway-admin is changed, add it to push queue.
+
+2023-05-29 23:59:12,685 INFO serviceName: DEFAULT_GROUP@@gateway-admin@@DEFAULT changed, schedule push for: 192.168.0.104:62715, agent: Nacos-Java-Client:v1.3.2, key: 192.168.0.104,62715,90216177967400
+
+2023-05-29 23:59:12,685 INFO send udp packet: 192.168.0.104,61987,90216177734000
+
+2023-05-29 23:59:12,685 INFO send udp packet: 192.168.0.104,62715,90216177967400
+
+2023-05-29 23:59:12,689 INFO [PUSH-SUCC] 5ms, all delay time 542ms, SLA 542ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=13}, originalSize=1, DataSize=1, target=192.168.0.104
+
+2023-05-29 23:59:22,687 INFO retry to push data, key: 192.168.0.104,62715,90216177967400
+
+2023-05-29 23:59:32,688 WARN max re-push times reached, retry times 2, key: 192.168.0.104,62715,90216177967400
+
+2023-05-29 23:59:32,688 ERROR [PUSH-FAIL] 20004ms, Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=13}, reason=null, target=192.168.0.104
+

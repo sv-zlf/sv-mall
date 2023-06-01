@@ -1,0 +1,196 @@
+2023-05-29 20:25:03,674 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2023-05-29 20:25:03,734 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2023-05-29 20:25:03,832 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2023-05-29 20:25:03,834 INFO The number of active nodes increment to 1.
+
+2023-05-29 20:25:04,035 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 0 to 4, cost 0 ms.
+
+2023-05-29 20:25:04,038 INFO Starts FSMCaller successfully.
+
+2023-05-29 20:25:04,044 INFO Loading snapshot, meta=last_included_index: 3
+last_included_term: 3
+peers: "192.168.137.1:7848"
+.
+
+2023-05-29 20:25:04,085 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> onSnapshotLoadDone, last_included_index: 3
+last_included_term: 3
+peers: "192.168.137.1:7848"
+
+
+2023-05-29 20:25:04,085 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> target priority value has changed from: 0, to: -1.
+
+2023-05-29 20:25:04,086 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
+
+2023-05-29 20:25:04,090 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=192.168.137.1:7848, oldConf=.
+
+2023-05-29 20:25:04,091 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> start vote and grant vote self, term=3.
+
+2023-05-29 20:25:04,101 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data on windows.
+
+2023-05-29 20:25:04,101 INFO Save raft meta, path=E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data, term=4, votedFor=192.168.137.1:7848, cost time=9 ms
+
+2023-05-29 20:25:04,101 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> become leader of group, term=4, conf=192.168.137.1:7848, oldConf=.
+
+2023-05-29 20:25:04,103 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2023-05-29 20:25:04,105 WARN RPC server is not started in RaftGroupService.
+
+2023-05-29 20:25:04,105 INFO Start the RaftGroupService successfully.
+
+2023-05-29 20:25:04,112 INFO onLeaderStart: term=4.
+
+2023-05-29 20:25:04,114 INFO The number of active nodes increment to 2.
+
+2023-05-29 20:25:04,149 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 0 to 4, cost 0 ms.
+
+2023-05-29 20:25:04,149 INFO Starts FSMCaller successfully.
+
+2023-05-29 20:25:04,150 INFO Loading snapshot, meta=last_included_index: 3
+last_included_term: 3
+peers: "192.168.137.1:7848"
+.
+
+2023-05-29 20:25:04,151 INFO Node <naming_instance_metadata/192.168.137.1:7848> onSnapshotLoadDone, last_included_index: 3
+last_included_term: 3
+peers: "192.168.137.1:7848"
+
+
+2023-05-29 20:25:04,151 INFO Node <naming_instance_metadata/192.168.137.1:7848> target priority value has changed from: 0, to: -1.
+
+2023-05-29 20:25:04,151 INFO Node <naming_instance_metadata/192.168.137.1:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=192.168.137.1:7848, oldConf=.
+
+2023-05-29 20:25:04,152 INFO Node <naming_instance_metadata/192.168.137.1:7848> start vote and grant vote self, term=3.
+
+2023-05-29 20:25:04,152 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
+
+2023-05-29 20:25:04,155 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_instance_metadata\meta-data on windows.
+
+2023-05-29 20:25:04,155 INFO Save raft meta, path=E:\project\nacos\data\protocol\raft\naming_instance_metadata\meta-data, term=4, votedFor=192.168.137.1:7848, cost time=3 ms
+
+2023-05-29 20:25:04,155 INFO Node <naming_instance_metadata/192.168.137.1:7848> become leader of group, term=4, conf=192.168.137.1:7848, oldConf=.
+
+2023-05-29 20:25:04,155 WARN RPC server is not started in RaftGroupService.
+
+2023-05-29 20:25:04,155 INFO Start the RaftGroupService successfully.
+
+2023-05-29 20:25:04,156 INFO onLeaderStart: term=4.
+
+2023-05-29 20:25:04,158 INFO The number of active nodes increment to 3.
+
+2023-05-29 20:25:04,166 INFO Creating new channel to: 192.168.137.1:7848.
+
+2023-05-29 20:25:04,191 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 0 to 4, cost 1 ms.
+
+2023-05-29 20:25:04,192 INFO Starts FSMCaller successfully.
+
+2023-05-29 20:25:04,192 INFO Loading snapshot, meta=last_included_index: 3
+last_included_term: 3
+peers: "192.168.137.1:7848"
+.
+
+2023-05-29 20:25:04,193 INFO Node <naming_service_metadata/192.168.137.1:7848> onSnapshotLoadDone, last_included_index: 3
+last_included_term: 3
+peers: "192.168.137.1:7848"
+
+
+2023-05-29 20:25:04,193 INFO Node <naming_service_metadata/192.168.137.1:7848> target priority value has changed from: 0, to: -1.
+
+2023-05-29 20:25:04,194 INFO Node <naming_service_metadata/192.168.137.1:7848> init, term=3, lastLogId=LogId [index=3, term=3], conf=192.168.137.1:7848, oldConf=.
+
+2023-05-29 20:25:04,194 INFO Node <naming_service_metadata/192.168.137.1:7848> start vote and grant vote self, term=3.
+
+2023-05-29 20:25:04,194 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
+
+2023-05-29 20:25:04,197 INFO The channel 192.168.137.1:7848 is in state: CONNECTING.
+
+2023-05-29 20:25:04,197 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_service_metadata\meta-data on windows.
+
+2023-05-29 20:25:04,197 INFO Save raft meta, path=E:\project\nacos\data\protocol\raft\naming_service_metadata\meta-data, term=4, votedFor=192.168.137.1:7848, cost time=4 ms
+
+2023-05-29 20:25:04,197 INFO Node <naming_service_metadata/192.168.137.1:7848> become leader of group, term=4, conf=192.168.137.1:7848, oldConf=.
+
+2023-05-29 20:25:04,197 WARN RPC server is not started in RaftGroupService.
+
+2023-05-29 20:25:04,197 INFO Start the RaftGroupService successfully.
+
+2023-05-29 20:25:04,199 INFO onLeaderStart: term=4.
+
+2023-05-29 20:25:04,341 INFO The channel 192.168.137.1:7848 is in state: READY.
+
+2023-05-29 20:25:04,341 INFO The channel 192.168.137.1:7848 has successfully established.
+
+2023-05-29 20:47:47,817 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp on windows.
+
+2023-05-29 20:47:47,817 INFO Deleting snapshot E:\project\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_4.
+
+2023-05-29 20:47:47,817 INFO Renaming E:\project\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp to E:\project\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_4.
+
+2023-05-29 20:47:47,818 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_instance_metadata\snapshot on windows.
+
+2023-05-29 20:47:47,818 INFO Deleting snapshot E:\project\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_3.
+
+2023-05-29 20:47:47,824 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 4, cost 0 ms.
+
+2023-05-29 20:49:02,164 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp on windows.
+
+2023-05-29 20:49:02,164 INFO Deleting snapshot E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_4.
+
+2023-05-29 20:49:02,164 INFO Renaming E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp to E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_4.
+
+2023-05-29 20:49:02,165 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot on windows.
+
+2023-05-29 20:49:02,165 INFO Deleting snapshot E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_3.
+
+2023-05-29 20:49:02,169 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 4, cost 0 ms.
+
+2023-05-29 20:52:08,722 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp on windows.
+
+2023-05-29 20:52:08,722 INFO Deleting snapshot E:\project\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_4.
+
+2023-05-29 20:52:08,722 INFO Renaming E:\project\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp to E:\project\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_4.
+
+2023-05-29 20:52:08,723 WARN Unable to fsync directory E:\project\nacos\data\protocol\raft\naming_service_metadata\snapshot on windows.
+
+2023-05-29 20:52:08,723 INFO Deleting snapshot E:\project\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_3.
+
+2023-05-29 20:52:08,727 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 4, cost 0 ms.
+
+2023-05-29 21:17:47,806 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 4 to 5, cost 0 ms.
+
+2023-05-29 21:19:02,150 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 4 to 5, cost 0 ms.
+
+2023-05-29 21:22:08,707 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 4 to 5, cost 1 ms.
+
+2023-05-29 21:47:47,806 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 21:49:02,151 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 21:52:08,709 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 22:17:47,807 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 22:19:02,151 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 22:22:08,711 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 22:47:47,808 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 22:49:02,153 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 5 to 5, cost 1 ms.
+
+2023-05-29 22:52:08,712 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 23:17:47,804 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 23:19:02,151 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 23:22:08,711 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 23:47:47,809 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 23:49:02,156 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 5 to 5, cost 0 ms.
+
+2023-05-29 23:52:08,712 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 5 to 5, cost 0 ms.
+

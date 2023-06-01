@@ -1,0 +1,84 @@
+2023-05-29 20:25:03,600 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-05-29 20:25:03,600 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-05-29 20:25:03,601 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-05-29 20:25:03,601 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-05-29 20:25:04,248 INFO Load instance extension handler []
+
+2023-05-29 21:31:44,296 INFO Client connection 192.168.0.104:53543#true connect
+
+2023-05-29 21:31:44,363 INFO Client connection 192.168.137.1:9090#true connect
+
+2023-05-29 21:31:44,364 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='auth-server', ephemeral=true, revision=0}, 192.168.137.1:9090#true
+
+2023-05-29 21:35:08,801 INFO Client connection 192.168.0.104:60159#true connect
+
+2023-05-29 21:35:11,404 INFO Client connection 192.168.137.1:8810#true connect
+
+2023-05-29 21:35:11,404 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=0}, 192.168.137.1:8810#true
+
+2023-05-29 23:23:41,389 INFO Client connection 192.168.0.104:58040#true connect
+
+2023-05-29 23:23:41,430 INFO Client connection 192.168.137.1:8020#true connect
+
+2023-05-29 23:23:41,430 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=0}, 192.168.137.1:8020#true
+
+2023-05-29 23:31:02,166 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=1}, 192.168.137.1:8810#true
+
+2023-05-29 23:31:07,237 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=1}, 192.168.137.1:8020#true
+
+2023-05-29 23:31:23,770 INFO Client connection 192.168.0.104:52768#true connect
+
+2023-05-29 23:31:26,397 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=2}, 192.168.137.1:8810#true
+
+2023-05-29 23:31:29,120 INFO Client connection 192.168.0.104:53587#true connect
+
+2023-05-29 23:31:29,172 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='shopcart-service', ephemeral=true, revision=2}, 192.168.137.1:8020#true
+
+2023-05-29 23:31:38,738 INFO Client connection 192.168.0.104:60159#true disconnect, remove instances and subscribers
+
+2023-05-29 23:31:43,740 INFO Client connection 192.168.0.104:58040#true disconnect, remove instances and subscribers
+
+2023-05-29 23:37:14,523 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=3}, 192.168.137.1:8810#true
+
+2023-05-29 23:37:39,211 INFO Client connection 192.168.0.104:52541#true connect
+
+2023-05-29 23:37:41,777 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=4}, 192.168.137.1:8810#true
+
+2023-05-29 23:37:48,806 INFO Client connection 192.168.0.104:52768#true disconnect, remove instances and subscribers
+
+2023-05-29 23:53:11,854 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=5}, 192.168.137.1:8810#true
+
+2023-05-29 23:53:34,862 INFO Client connection 192.168.0.104:51071#true connect
+
+2023-05-29 23:53:37,443 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=6}, 192.168.137.1:8810#true
+
+2023-05-29 23:53:43,960 INFO Client connection 192.168.0.104:52541#true disconnect, remove instances and subscribers
+
+2023-05-29 23:55:26,288 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=7}, 192.168.137.1:8810#true
+
+2023-05-29 23:55:47,134 INFO Client connection 192.168.0.104:50430#true connect
+
+2023-05-29 23:55:49,689 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=8}, 192.168.137.1:8810#true
+
+2023-05-29 23:55:58,984 INFO Client connection 192.168.0.104:51071#true disconnect, remove instances and subscribers
+
+2023-05-29 23:57:33,624 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=9}, 192.168.137.1:8810#true
+
+2023-05-29 23:57:54,298 INFO Client connection 192.168.0.104:62715#true connect
+
+2023-05-29 23:57:56,863 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=10}, 192.168.137.1:8810#true
+
+2023-05-29 23:58:14,004 INFO Client connection 192.168.0.104:50430#true disconnect, remove instances and subscribers
+
+2023-05-29 23:58:46,067 INFO Client remove for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=11}, 192.168.137.1:8810#true
+
+2023-05-29 23:59:09,551 INFO Client connection 192.168.0.104:61987#true connect
+
+2023-05-29 23:59:12,147 INFO Client change for service Service{namespace='29708712-1f65-488e-965a-acd5adea43fe', group='DEFAULT_GROUP', name='gateway-admin', ephemeral=true, revision=12}, 192.168.137.1:8810#true
+
+2023-05-29 23:59:19,014 INFO Client connection 192.168.0.104:62715#true disconnect, remove instances and subscribers
+

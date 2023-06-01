@@ -1,5 +1,6 @@
 package com.svmall.shopcart.controller;
 
+import com.svmall.common.exception.ErrorException;
 import com.svmall.common.vo.ResultCode;
 import com.svmall.common.vo.ResultVo;
 import io.swagger.annotations.Api;
@@ -29,6 +30,7 @@ public class TestController {
 
     @GetMapping("/error/hello")
     public ResultVo error() {
-        return new ResultVo(ResultCode.FAILED,"抛出异常");
+        throw new ErrorException(ResultCode.FAILED,"异常测试");
+        //return new ResultVo(ResultCode.FAILED,"抛出异常");
     }
 }
