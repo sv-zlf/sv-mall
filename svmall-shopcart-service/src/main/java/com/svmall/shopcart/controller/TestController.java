@@ -1,5 +1,7 @@
 package com.svmall.shopcart.controller;
 
+import com.svmall.common.vo.ResultCode;
+import com.svmall.common.vo.ResultVo;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,5 +25,10 @@ public class TestController {
     @GetMapping("/yyy")
     public String yyy(){
         return "sss";
+    }
+
+    @GetMapping("/error/hello")
+    public ResultVo error() {
+        return new ResultVo(ResultCode.FAILED,"抛出异常");
     }
 }

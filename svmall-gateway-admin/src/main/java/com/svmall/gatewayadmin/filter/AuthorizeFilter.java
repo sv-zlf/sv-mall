@@ -54,6 +54,7 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
         String token = request.getHeaders().getFirst("token");
         //4.判断token是否存在
         if(StringUtils.isBlank(token)){
+            System.out.println("token不存在");
             throw new ErrorException(ResultCode.TOKEN_INVALID, "token不存在");
         }
         System.out.println(token);

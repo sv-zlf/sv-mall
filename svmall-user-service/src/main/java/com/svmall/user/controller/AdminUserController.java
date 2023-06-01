@@ -4,7 +4,6 @@ package com.svmall.user.controller;
 import com.svmall.user.controller.parm.AdminLoginParam;
 import com.svmall.user.entity.AdminUser;
 import com.svmall.user.service.AdminUserService;
-
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -44,6 +43,7 @@ public class AdminUserController {
         adminUser.setUserName("ddd");
         return adminUser;
     }
+
 
 }
 

@@ -1,5 +1,6 @@
 package com.svmall.common.exception;
 
+
 import com.svmall.common.vo.StatusCode;
 import lombok.Getter;
 

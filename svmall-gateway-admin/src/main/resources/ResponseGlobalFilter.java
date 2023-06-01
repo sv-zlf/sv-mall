@@ -3,11 +3,6 @@ package com.svmall.gatewayadmin.filter;
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.svmall.gatewayadmin.exception.ErrorException;
-import com.svmall.gatewayadmin.vo.ResultCode;
 import com.svmall.gatewayadmin.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -76,7 +71,7 @@ public class ResponseGlobalFilter implements GlobalFilter, Ordered {
                             return bufferFactory.wrap(bytes);
                         }
                         else{
-                            System.out.println("非字符串");
+                            System.out.println("非字符串："+lastStr);
                             JSONObject jsonObject = JSONUtil.parseObj(lastStr);
                             lastStr = JSONUtil.toJsonStr(new ResultVo(jsonObject));
                             originalResponse.getHeaders().setContentLength(lastStr.getBytes().length);
