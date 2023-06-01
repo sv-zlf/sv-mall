@@ -18,6 +18,10 @@ public class ResultVo {
     // 返回对象
     private Object data;
 
+
+    private Long timestamp = System.currentTimeMillis();
+
+
     // 手动设置返回vo
     public ResultVo(int code, String msg, Object data) {
         this.code = code;

@@ -1,10 +1,7 @@
 package com.svmall.gatewayadmin.handler;
 
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.svmall.gatewayadmin.vo.ResultCode;
-import com.svmall.gatewayadmin.vo.ResultVo;
+
 import org.springframework.boot.autoconfigure.web.ErrorProperties;
 import org.springframework.boot.autoconfigure.web.ResourceProperties;
 import org.springframework.boot.autoconfigure.web.reactive.error.DefaultErrorWebExceptionHandler;
@@ -13,6 +10,7 @@ import org.springframework.boot.web.reactive.error.ErrorAttributes;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.reactive.function.server.*;
 
+import java.util.HashMap;
 import java.util.Map;
 
 
@@ -37,7 +35,6 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
     protected Map<String, Object> getErrorAttributes(ServerRequest request,ErrorAttributeOptions options) {
         int code = 888;
         Throwable error = super.getError(request);
-        System.out.println("error:"+options.getIncludes());
         return response(code, this.buildMessage(request, error));
     }
 
@@ -87,8 +84,11 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
      * @return
      */
     public static Map<String, Object> response(int status, String errorMessage) {
-        JSONObject jsonObject = JSON.parseObject(JSON.toJSONString(new ResultVo(ResultCode.APP_ERROR,errorMessage)));
-        return jsonObject;
+        Map<String, Object> map = new HashMap<>();
+        map.put("code", status);
+        map.put("message", errorMessage);
+        map.put("data", null);
+        return map;
     }
 
 }

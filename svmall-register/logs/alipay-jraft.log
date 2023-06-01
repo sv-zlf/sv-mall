@@ -1,12 +1,172 @@
-2023-05-31 00:05:28,797 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 6 to 6, cost 0 ms.
+2023-06-01 21:42:40,452 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
 
-2023-05-31 00:29:34,524 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 6 to 6, cost 1 ms.
+2023-06-01 21:42:40,515 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
 
-2023-05-31 00:29:51,808 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 6 to 6, cost 0 ms.
+2023-06-01 21:42:40,614 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
 
-2023-05-31 00:35:28,794 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_service_metadata\log from log index 6 to 6, cost 0 ms.
+2023-06-01 21:42:40,617 INFO The number of active nodes increment to 1.
 
-2023-05-31 00:59:34,529 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_instance_metadata\log from log index 6 to 6, cost 0 ms.
+2023-06-01 21:42:40,829 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\log from log index 0 to 6, cost 0 ms.
 
-2023-05-31 00:59:51,812 INFO Truncated prefix logs in data path: E:\project\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 6 to 6, cost 0 ms.
+2023-06-01 21:42:40,833 INFO Starts FSMCaller successfully.
+
+2023-06-01 21:42:40,840 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_4.
+
+2023-06-01 21:42:40,849 INFO Loading snapshot, meta=last_included_index: 5
+last_included_term: 5
+peers: "192.168.137.1:7848"
+.
+
+2023-06-01 21:42:40,905 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> onSnapshotLoadDone, last_included_index: 5
+last_included_term: 5
+peers: "192.168.137.1:7848"
+
+
+2023-06-01 21:42:40,905 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> target priority value has changed from: 0, to: -1.
+
+2023-06-01 21:42:40,906 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\log from log index 6 to 6, cost 0 ms.
+
+2023-06-01 21:42:40,911 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> init, term=5, lastLogId=LogId [index=5, term=5], conf=192.168.137.1:7848, oldConf=.
+
+2023-06-01 21:42:40,912 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> start vote and grant vote self, term=5.
+
+2023-06-01 21:42:40,925 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\meta-data on windows.
+
+2023-06-01 21:42:40,925 INFO Save raft meta, path=E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\meta-data, term=6, votedFor=192.168.137.1:7848, cost time=11 ms
+
+2023-06-01 21:42:40,925 INFO Node <naming_persistent_service_v2/192.168.137.1:7848> become leader of group, term=6, conf=192.168.137.1:7848, oldConf=.
+
+2023-06-01 21:42:40,926 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2023-06-01 21:42:40,928 WARN RPC server is not started in RaftGroupService.
+
+2023-06-01 21:42:40,928 INFO Start the RaftGroupService successfully.
+
+2023-06-01 21:42:40,934 INFO onLeaderStart: term=6.
+
+2023-06-01 21:42:40,938 INFO The number of active nodes increment to 2.
+
+2023-06-01 21:42:40,994 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\log from log index 0 to 6, cost 1 ms.
+
+2023-06-01 21:42:40,994 INFO Creating new channel to: 192.168.137.1:7848.
+
+2023-06-01 21:42:40,996 INFO Starts FSMCaller successfully.
+
+2023-06-01 21:42:40,997 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_4.
+
+2023-06-01 21:42:41,000 INFO Loading snapshot, meta=last_included_index: 5
+last_included_term: 5
+peers: "192.168.137.1:7848"
+.
+
+2023-06-01 21:42:41,001 INFO Node <naming_instance_metadata/192.168.137.1:7848> onSnapshotLoadDone, last_included_index: 5
+last_included_term: 5
+peers: "192.168.137.1:7848"
+
+
+2023-06-01 21:42:41,002 INFO Node <naming_instance_metadata/192.168.137.1:7848> target priority value has changed from: 0, to: -1.
+
+2023-06-01 21:42:41,003 INFO Node <naming_instance_metadata/192.168.137.1:7848> init, term=5, lastLogId=LogId [index=5, term=5], conf=192.168.137.1:7848, oldConf=.
+
+2023-06-01 21:42:41,003 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\log from log index 6 to 6, cost 0 ms.
+
+2023-06-01 21:42:41,004 INFO Node <naming_instance_metadata/192.168.137.1:7848> start vote and grant vote self, term=5.
+
+2023-06-01 21:42:41,009 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\meta-data on windows.
+
+2023-06-01 21:42:41,009 INFO Save raft meta, path=E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\meta-data, term=6, votedFor=192.168.137.1:7848, cost time=6 ms
+
+2023-06-01 21:42:41,010 INFO Node <naming_instance_metadata/192.168.137.1:7848> become leader of group, term=6, conf=192.168.137.1:7848, oldConf=.
+
+2023-06-01 21:42:41,010 WARN RPC server is not started in RaftGroupService.
+
+2023-06-01 21:42:41,010 INFO Start the RaftGroupService successfully.
+
+2023-06-01 21:42:41,011 INFO onLeaderStart: term=6.
+
+2023-06-01 21:42:41,012 INFO The number of active nodes increment to 3.
+
+2023-06-01 21:42:41,035 INFO The channel 192.168.137.1:7848 is in state: CONNECTING.
+
+2023-06-01 21:42:41,076 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\log from log index 0 to 6, cost 0 ms.
+
+2023-06-01 21:42:41,076 INFO Starts FSMCaller successfully.
+
+2023-06-01 21:42:41,076 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot\snapshot_4.
+
+2023-06-01 21:42:41,081 INFO Loading snapshot, meta=last_included_index: 5
+last_included_term: 5
+peers: "192.168.137.1:7848"
+.
+
+2023-06-01 21:42:41,082 INFO Node <naming_service_metadata/192.168.137.1:7848> onSnapshotLoadDone, last_included_index: 5
+last_included_term: 5
+peers: "192.168.137.1:7848"
+
+
+2023-06-01 21:42:41,082 INFO Node <naming_service_metadata/192.168.137.1:7848> target priority value has changed from: 0, to: -1.
+
+2023-06-01 21:42:41,083 INFO Node <naming_service_metadata/192.168.137.1:7848> init, term=5, lastLogId=LogId [index=5, term=5], conf=192.168.137.1:7848, oldConf=.
+
+2023-06-01 21:42:41,083 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\log from log index 6 to 6, cost 0 ms.
+
+2023-06-01 21:42:41,083 INFO Node <naming_service_metadata/192.168.137.1:7848> start vote and grant vote self, term=5.
+
+2023-06-01 21:42:41,089 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\meta-data on windows.
+
+2023-06-01 21:42:41,089 INFO Save raft meta, path=E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\meta-data, term=6, votedFor=192.168.137.1:7848, cost time=6 ms
+
+2023-06-01 21:42:41,089 INFO Node <naming_service_metadata/192.168.137.1:7848> become leader of group, term=6, conf=192.168.137.1:7848, oldConf=.
+
+2023-06-01 21:42:41,089 WARN RPC server is not started in RaftGroupService.
+
+2023-06-01 21:42:41,089 INFO Start the RaftGroupService successfully.
+
+2023-06-01 21:42:41,090 INFO onLeaderStart: term=6.
+
+2023-06-01 21:42:41,185 INFO The channel 192.168.137.1:7848 is in state: READY.
+
+2023-06-01 21:42:41,185 INFO The channel 192.168.137.1:7848 has successfully established.
+
+2023-06-01 21:58:01,332 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot\temp on windows.
+
+2023-06-01 21:58:01,332 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot\snapshot_6.
+
+2023-06-01 21:58:01,332 INFO Renaming E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot\temp to E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot\snapshot_6.
+
+2023-06-01 21:58:01,333 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot on windows.
+
+2023-06-01 21:58:01,333 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\snapshot\snapshot_5.
+
+2023-06-01 21:58:01,337 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\log from log index 6 to 6, cost 0 ms.
+
+2023-06-01 22:01:56,643 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot\temp on windows.
+
+2023-06-01 22:01:56,643 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_6.
+
+2023-06-01 22:01:56,643 INFO Renaming E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot\temp to E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_6.
+
+2023-06-01 22:01:56,645 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot on windows.
+
+2023-06-01 22:01:56,645 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_5.
+
+2023-06-01 22:01:56,650 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\log from log index 6 to 6, cost 0 ms.
+
+2023-06-01 22:12:12,834 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot\temp on windows.
+
+2023-06-01 22:12:12,834 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_6.
+
+2023-06-01 22:12:12,834 INFO Renaming E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot\temp to E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_6.
+
+2023-06-01 22:12:12,836 WARN Unable to fsync directory E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot on windows.
+
+2023-06-01 22:12:12,836 INFO Deleting snapshot E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_5.
+
+2023-06-01 22:12:12,844 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\log from log index 6 to 6, cost 0 ms.
+
+2023-06-01 22:28:01,313 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_service_metadata\log from log index 6 to 7, cost 0 ms.
+
+2023-06-01 22:31:56,638 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_persistent_service_v2\log from log index 6 to 7, cost 0 ms.
+
+2023-06-01 22:42:12,816 INFO Truncated prefix logs in data path: E:\project\sv-mall\svmall-register\data\protocol\raft\naming_instance_metadata\log from log index 6 to 7, cost 0 ms.
 

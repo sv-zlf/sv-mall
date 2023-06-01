@@ -2,9 +2,7 @@ package com.svmall.gatewayadmin.filter;
 
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.svmall.gatewayadmin.exception.ErrorException;
 import com.svmall.gatewayadmin.service.AuthService;
-import com.svmall.gatewayadmin.vo.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,7 +53,8 @@ public class AuthorizeFilter implements Ordered, GlobalFilter {
         //4.判断token是否存在
         if(StringUtils.isBlank(token)){
             System.out.println("token不存在");
-            throw new ErrorException(ResultCode.TOKEN_INVALID, "token不存在");
+            throw new RuntimeException("token不存在");
+//            throw new (ResultCode.TOKEN_INVALID, "token不存在");
         }
         System.out.println(token);
 
