@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 
@@ -13,6 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
 @SpringBootApplication(exclude = { TransactionAutoConfiguration.class})
 @EnableDiscoveryClient
 @EnableSwagger2WebMvc
+@ComponentScan(basePackages ="com.svmall")
 public class SvmallUserServiceApplication {
 
     static Logger logger= LoggerFactory.getLogger(SvmallUserServiceApplication.class);

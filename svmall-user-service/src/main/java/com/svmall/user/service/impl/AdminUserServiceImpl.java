@@ -9,6 +9,7 @@ import com.svmall.user.controller.parm.AdminLoginParam;
 import com.svmall.user.entity.AdminUser;
 import com.svmall.user.mapper.AdminUserMapper;
 import com.svmall.user.service.AdminUserService;
+import com.svmall.user.service.openfeign.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,20 +31,16 @@ public class AdminUserServiceImpl extends ServiceImpl<AdminUserMapper, AdminUser
     @Autowired
     AdminUserMapper adminUserMapper;
 
-    private RedisUtil redisUtil;
+    @Autowired
+    private AuthService authService;
 
-    private String key;
+
 
     @Override
     public String login(AdminLoginParam adminLoginParam){
 
         AdminUser adminUser=adminUserMapper.login(adminLoginParam.getUserName(),adminLoginParam.getPassword());
         if (adminUser!=null) {
-            Map<String,Object> playroad=new HashMap<String,Object>();
-            String userName=adminUser.getUserName();
-            playroad.put("userName",userName);
-            String token=JWTUtil.createToken(playroad,key.getBytes());
-            redisUtil.set(userName,token,System.currentTimeMillis() + 1000 * 60 * 60 * 24 * 15);
             return token;
         } else {
             throw new ErrorException(ResultCode.FAILED, "登陆用户名或者密码不对");
