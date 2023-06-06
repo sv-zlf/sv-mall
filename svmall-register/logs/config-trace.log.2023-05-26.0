@@ -1,6 +1,0 @@
-2023-05-26 20:38:42,558|192.168.137.1|gateway-admin|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1|false
-2023-05-26 20:38:42,571|192.168.137.1|gateway-admin.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1|false
-2023-05-26 20:38:45,507|192.168.137.1|gateway-router|DEFAULT_GROUP|29708712-1f65-488e-965a-acd5adea43fe|unknown|1685030333212|pull|ok|74392295|127.0.0.1|false
-2023-05-26 20:40:51,007|192.168.137.1|gateway-admin|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1|false
-2023-05-26 20:40:51,013|192.168.137.1|gateway-admin.properties|DEFAULT_GROUP|null|unknown|-1|pull|not-found|-1|127.0.0.1|false
-2023-05-26 20:40:53,829|192.168.137.1|gateway-router|DEFAULT_GROUP|29708712-1f65-488e-965a-acd5adea43fe|unknown|1685030333212|pull|ok|74520617|127.0.0.1|false
