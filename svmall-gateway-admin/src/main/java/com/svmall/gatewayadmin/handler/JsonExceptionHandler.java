@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  * @author zlf
- * @data 2023/2/12
+ * @date 2023/2/12
  * @apiNote 自定义异常处理
  * <p>异常时用JSON代替HTML异常信息<p>
  */
@@ -88,6 +88,7 @@ public class JsonExceptionHandler extends DefaultErrorWebExceptionHandler {
         map.put("code", status);
         map.put("message", errorMessage);
         map.put("data", null);
+        map.put("timestamp",System.currentTimeMillis());
         return map;
     }
 

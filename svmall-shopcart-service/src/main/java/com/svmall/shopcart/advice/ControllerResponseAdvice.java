@@ -1,7 +1,7 @@
 package com.svmall.shopcart.advice;
 
-import cn.hutool.json.JSONObject;
-import cn.hutool.json.JSONUtil;
+
+import com.alibaba.fastjson.JSON;
 import com.svmall.common.vo.ResultVo;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
@@ -28,11 +28,7 @@ public class ControllerResponseAdvice implements ResponseBodyAdvice<Object> {
     public Object beforeBodyWrite(Object data, MethodParameter returnType, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest request, ServerHttpResponse response) {
         // String类型不能直接包装
         if (returnType.getGenericParameterType().equals(String.class)) {
-            //ObjectMapper objectMapper = new ObjectMapper();
-            JSONObject json = JSONUtil.parseObj(new ResultVo(data), false);
-            // 将数据包装在ResultVo里后转换为json串进行返回
-            //return objectMapper.writeValueAsString(new ResultVo(data));
-            return json;
+            return JSON.toJSONString(new ResultVo(data));
         }
         // 否则直接包装成ResultVo返回
         return new ResultVo(data);
